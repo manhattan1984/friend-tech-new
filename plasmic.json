@@ -1,0 +1,1150 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.23.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.20.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ]
+    },
+    {
+      "projectId": "ohDidvG9XsCeFumugENU3J",
+      "projectApiToken": "YE6pw0s6HZvyAZENjWdhh22CZUvZbVXVeOr7IxU58m9rwk2ITG1RfJGcJjzF2uEC7DCqa4PDzPP1UXxfKuuQ",
+      "projectName": "antd5 hostless",
+      "version": "4.14.0",
+      "cssFilePath": "plasmic/antd_5_hostless/plasmic_antd_5_hostless.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/antd_5_hostless/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "OvH7ENd3m7ug",
+          "name": "AntdSelect",
+          "displayName": "plasmic-antd5-select",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
+        },
+        {
+          "id": "ACzfHW-ZLLiW",
+          "name": "AntdOption",
+          "displayName": "plasmic-antd5-option",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
+        },
+        {
+          "id": "UyLCOYx2BYc4",
+          "name": "AntdTable",
+          "displayName": "plasmic-antd5-table",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
+        },
+        {
+          "id": "OFZLDfR2iHmj",
+          "name": "AntdColumn",
+          "displayName": "plasmic-antd5-table-column",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
+        },
+        {
+          "id": "-EU4JlrV3jtw",
+          "name": "AntdColumnGroup",
+          "displayName": "plasmic-antd5-table-column-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
+        },
+        {
+          "id": "DmrLLHGTjGTE",
+          "name": "AntdConfigProvider",
+          "displayName": "plasmic-antd5-config-provider",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerConfigProvider"
+        },
+        {
+          "id": "aFHKFWNvs7",
+          "name": "AntdCheckbox",
+          "displayName": "plasmic-antd5-checkbox",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
+        },
+        {
+          "id": "2bM6vBkaxc",
+          "name": "AntdCheckboxGroup",
+          "displayName": "plasmic-antd5-checkbox-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
+        },
+        {
+          "id": "-CXVV9tXtP",
+          "name": "AntdRadio",
+          "displayName": "plasmic-antd5-radio",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
+        },
+        {
+          "id": "C3Ce7Sqgay",
+          "name": "AntdRadioButton",
+          "displayName": "plasmic-antd5-radio-button",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
+        },
+        {
+          "id": "PZQhrvIGy1",
+          "name": "AntdRadioGroup",
+          "displayName": "plasmic-antd5-radio-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
+        },
+        {
+          "id": "xx93QbkHH5i",
+          "name": "AntdModal",
+          "displayName": "plasmic-antd5-modal",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerModal"
+        },
+        {
+          "id": "bx9Xzvf5_eu",
+          "name": "AntdButton",
+          "displayName": "plasmic-antd5-button",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerButton"
+        },
+        {
+          "id": "fo-n3xHvdqt",
+          "name": "AntdMenu",
+          "displayName": "plasmic-antd5-menu",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "QSmezaW-Gyu",
+          "name": "AntdMenuItem",
+          "displayName": "plasmic-antd5-menu-item",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "6ySly9jzXsR",
+          "name": "AntdMenuItemGroup",
+          "displayName": "plasmic-antd5-menu-item-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "pwJcAbVYC4M",
+          "name": "AntdMenuDivider",
+          "displayName": "plasmic-antd5-menu-divider",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "nL-8oPEfDNL",
+          "name": "AntdSubMenu",
+          "displayName": "plasmic-antd5-submenu",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "zIDEYq9RgLG",
+          "name": "AntdDropdown",
+          "displayName": "plasmic-antd5-dropdown",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDropdown"
+        },
+        {
+          "id": "5sJiSDZuAW",
+          "name": "AntdOptionGroup",
+          "displayName": "plasmic-antd5-option-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
+        },
+        {
+          "id": "TgJFzUZpvQ",
+          "name": "FormWrapper",
+          "displayName": "plasmic-antd5-form",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm",
+          "helper": {
+            "name": "formHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerForm"
+          }
+        },
+        {
+          "id": "EYHwZh9ILg",
+          "name": "FormItemWrapper",
+          "displayName": "plasmic-antd5-form-item",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
+        },
+        {
+          "id": "zEXrWX9naj",
+          "name": "FormGroup",
+          "displayName": "plasmic-antd5-form-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
+        },
+        {
+          "id": "M2mN_XzxO4",
+          "name": "FormListWrapper",
+          "displayName": "plasmic-antd5-form-list",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
+        },
+        {
+          "id": "Vf5hntD2SZ5",
+          "name": "AntdInput",
+          "displayName": "plasmic-antd5-input",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerInput"
+          }
+        },
+        {
+          "id": "RW4q13RFtAd",
+          "name": "AntdPassword",
+          "displayName": "plasmic-antd5-input-password",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerInput"
+          }
+        },
+        {
+          "id": "pTzGlMptTxd",
+          "name": "AntdTextArea",
+          "displayName": "plasmic-antd5-textarea",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerInput"
+          }
+        },
+        {
+          "id": "wxD5qjEe3pU",
+          "name": "AntdInputNumber",
+          "displayName": "plasmic-antd5-input-number",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput"
+        },
+        {
+          "id": "Zzbfw0tfhA",
+          "name": "UploadWrapper",
+          "displayName": "plasmic-antd5-upload",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
+        },
+        {
+          "id": "-gkBqPikhk",
+          "name": "AntdSwitch",
+          "displayName": "plasmic-antd5-switch",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSwitch"
+        },
+        {
+          "id": "lKdkQL67fv",
+          "name": "AntdDatePicker",
+          "displayName": "plasmic-antd5-date-picker",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
+        },
+        {
+          "id": "YcIbmJhMwB",
+          "name": "AntdColorPicker",
+          "displayName": "plasmic-antd5-color-picker",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerColorPicker"
+        },
+        {
+          "id": "Nb0bEUV6vm",
+          "name": "AntdDrawer",
+          "displayName": "plasmic-antd5-drawer",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDrawer"
+        },
+        {
+          "id": "uIwOvA8Rbo",
+          "name": "AntdSteps",
+          "displayName": "plasmic-antd5-steps",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSteps"
+        },
+        {
+          "id": "rdsGm3tzUj",
+          "name": "AntdTooltip",
+          "displayName": "plasmic-antd5-tooltip",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTooltip"
+        },
+        {
+          "id": "nqcsn8n56U",
+          "name": "AntdAvatar",
+          "displayName": "plasmic-antd5-avatar",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerAvatar"
+        },
+        {
+          "id": "GuSPoNm_cBy",
+          "name": "AntdAvatarGroup",
+          "displayName": "plasmic-antd5-avatar-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerAvatar"
+        },
+        {
+          "id": "GDiBhO1FaQ",
+          "name": "AntdTree",
+          "displayName": "plasmic-antd5-tree",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTree",
+          "helper": {
+            "name": "treeHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerTree"
+          }
+        },
+        {
+          "id": "2Gn9Np0fVX",
+          "name": "AntdDirectoryTree",
+          "displayName": "plasmic-antd5-directory-tree",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTree",
+          "helper": {
+            "name": "treeHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerTree"
+          }
+        }
+      ]
+    },
+    {
+      "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+      "projectApiToken": "EPvXzbZZrkf16tJYnbkM8sbDbYVeWuh5bnksTvPNtUVDvj3cMAeEGxzrQuC9U9eOZifteBU3Lq3H2U22zQ",
+      "projectName": "Friends Tech - King",
+      "version": "latest",
+      "cssFilePath": "plasmic/friends_tech_king/plasmic_friends_tech_king.module.css",
+      "components": [
+        {
+          "id": "X48cJgHH48y",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "xiHcz424ku6",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "k4Jo9vYYOfaB",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "wTnQKvx7xtRe",
+          "name": "BenefitSection",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicBenefitSection.tsx",
+          "importSpec": {
+            "modulePath": "BenefitSection.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicBenefitSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "SfWv_--dQ9Pb",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ArQrHzR6rD-y",
+          "name": "Loan",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicLoan.tsx",
+          "importSpec": {
+            "modulePath": "../pages/loan.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicLoan.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "irj0wRv4NhUG",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "2S-DfRS0Ri3G",
+          "name": "Hero",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicHero.tsx",
+          "importSpec": {
+            "modulePath": "Hero.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicHero.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "txvwGAyHWOKz",
+          "name": "Testimonial",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicTestimonial.tsx",
+          "importSpec": {
+            "modulePath": "Testimonial.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicTestimonial.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "cKtNscfl8RsZ",
+          "name": "Waitlist",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicWaitlist.tsx",
+          "importSpec": {
+            "modulePath": "../pages/waitlist.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicWaitlist.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "AICSkwUkXJt3",
+          "name": "PageSection",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicPageSection.tsx",
+          "importSpec": {
+            "modulePath": "PageSection.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicPageSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5t5QAcCT3loC",
+          "name": "Whitelist",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicWhitelist.tsx",
+          "importSpec": {
+            "modulePath": "../pages/whitelist.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicWhitelist.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "cI-UCGUt-dL5",
+          "name": "PageBenefit",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicPageBenefit.tsx",
+          "importSpec": {
+            "modulePath": "PageBenefit.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicPageBenefit.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "vCCfpRKdAe6W",
+          "name": "Community",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicCommunity.tsx",
+          "importSpec": {
+            "modulePath": "../pages/community.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicCommunity.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "sZ3gbPrkMb8I",
+          "name": "Airdrop",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicAirdrop.tsx",
+          "importSpec": {
+            "modulePath": "../pages/airdrop.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicAirdrop.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HqWYsESv6MQh",
+          "name": "Authenticate",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicAuthenticate.tsx",
+          "importSpec": {
+            "modulePath": "../pages/authenticate.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicAuthenticate.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "CYtkN2cBIEDO",
+          "name": "Mint",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicMint.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mint.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicMint.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "K_DUTaHm66TF",
+          "name": "Investment",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicInvestment.tsx",
+          "importSpec": {
+            "modulePath": "../pages/investment.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicInvestment.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "RRFlIorcnfB_",
+          "name": "InvestmentHomepage",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicInvestmentHomepage.tsx",
+          "importSpec": {
+            "modulePath": "InvestmentHomepage.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicInvestmentHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8p_4NvAXmxVJ",
+          "name": "MetricItem",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicMetricItem.tsx",
+          "importSpec": {
+            "modulePath": "MetricItem.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicMetricItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uF1kSRwdzjAb",
+          "name": "Feature",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicFeature.tsx",
+          "importSpec": {
+            "modulePath": "Feature.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicFeature.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "pFW8f1wCp2vn",
+          "name": "PlansPage",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicPlansPage.tsx",
+          "importSpec": {
+            "modulePath": "PlansPage.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicPlansPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "eElla8BSTIjZ",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "mAetA7ickSj4",
+          "name": "Testimonial2",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicTestimonial2.tsx",
+          "importSpec": {
+            "modulePath": "Testimonial2.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicTestimonial2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "R6gMo0vdSGCU",
+          "name": "Plan",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicPlan.tsx",
+          "importSpec": {
+            "modulePath": "Plan.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicPlan.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "pgGkyFmZe3k7",
+          "name": "LoanHomepage",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicLoanHomepage.tsx",
+          "importSpec": {
+            "modulePath": "LoanHomepage.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicLoanHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6mO-YzPwqb-d",
+          "name": "Button3",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicButton3.tsx",
+          "importSpec": {
+            "modulePath": "Button3.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicButton3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "2sweiwlaoYgh",
+          "name": "InfoHoldingComponent",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicInfoHoldingComponent.tsx",
+          "importSpec": {
+            "modulePath": "InfoHoldingComponent.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicInfoHoldingComponent.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Sl58UbzqihgE",
+          "name": "BackersLink",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicBackersLink.tsx",
+          "importSpec": {
+            "modulePath": "BackersLink.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicBackersLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5NQDrFliC8CX",
+          "name": "CollateralOptionItem",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicCollateralOptionItem.tsx",
+          "importSpec": {
+            "modulePath": "CollateralOptionItem.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicCollateralOptionItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "9Xt3tSsiOwrX",
+          "name": "LoanSteps",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicLoanSteps.tsx",
+          "importSpec": {
+            "modulePath": "LoanSteps.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicLoanSteps.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uTgmpuxKs5v_",
+          "name": "About",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicAbout.tsx",
+          "importSpec": {
+            "modulePath": "../pages/about.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "1D1vYwMlm3FT",
+          "name": "TeamItem",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicTeamItem.tsx",
+          "importSpec": {
+            "modulePath": "TeamItem.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicTeamItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "1GlNaZ2SY0FO",
+          "name": "ConnectWallet",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicConnectWallet.tsx",
+          "importSpec": {
+            "modulePath": "ConnectWallet.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicConnectWallet.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "tS4Sphrlh0qf",
+          "name": "Wallet",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicWallet.tsx",
+          "importSpec": {
+            "modulePath": "Wallet.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicWallet.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "e58rgm-WFTW",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "iECEl4Bsrc_",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "3YhN0cO8U6",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "QlZbFc2d49",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "YlVgqKs-x",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "gLkfnOeDF",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "D2cypsO29_Z",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "ha2_6bGNVEft",
+          "name": "BaseIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Base.tsx"
+        },
+        {
+          "id": "sfSfuoLNNg34",
+          "name": "SensorIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Sensor.tsx"
+        },
+        {
+          "id": "DGfeCqjnDno0",
+          "name": "CameraIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Camera.tsx"
+        },
+        {
+          "id": "c0IAv_uoKt-F",
+          "name": "LoudspeakerIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Loudspeaker.tsx"
+        },
+        {
+          "id": "dOnxUFGxu7Qr",
+          "name": "FacebookOriginalIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__FacebookOriginal.tsx"
+        },
+        {
+          "id": "jZ7iX4rLTSiw",
+          "name": "InstagramOriginalIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__InstagramOriginal.tsx"
+        },
+        {
+          "id": "5J6CDfNce4vO",
+          "name": "TikTokOriginalIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__TikTokOriginal.tsx"
+        },
+        {
+          "id": "0euhnWJje1jg",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon6.tsx"
+        },
+        {
+          "id": "1w4Gi4VeEeur",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon7.tsx"
+        },
+        {
+          "id": "VXBKbs3lVlr6",
+          "name": "EllipseIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Ellipse.tsx"
+        },
+        {
+          "id": "fEosgQYOofiK",
+          "name": "Iconsocialperson24PxIcon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Iconsocialperson24Px.tsx"
+        },
+        {
+          "id": "XNSObMs5ppki",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "eeRUdt8FVI5x",
+          "name": "Icon9Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon9.tsx"
+        },
+        {
+          "id": "UpQV59XvixFf",
+          "name": "Icon10Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon10.tsx"
+        },
+        {
+          "id": "j7u7kYcGFGCX",
+          "name": "Icon11Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon11.tsx"
+        },
+        {
+          "id": "uC8bBJhPRpth",
+          "name": "Icon12Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon12.tsx"
+        },
+        {
+          "id": "HLcHD8nfB82j",
+          "name": "Icon13Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon13.tsx"
+        },
+        {
+          "id": "ZRNzZKu48IRp",
+          "name": "Icon14Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon14.tsx"
+        },
+        {
+          "id": "RTnV2HOoZ-xo",
+          "name": "Icon15Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon15.tsx"
+        },
+        {
+          "id": "7OC1lMgTs8WC",
+          "name": "Icon16Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "G9EVIW-dwiGA",
+          "name": "Icon17Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon17.tsx"
+        },
+        {
+          "id": "9ESfOEFv8w28",
+          "name": "Icon18Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon18.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "eYa95U10f",
+          "name": "image",
+          "filePath": "../public/plasmic/friends_tech_king/images/image.svg"
+        },
+        {
+          "id": "LqSGSQaKL",
+          "name": "IMG_4989-removebg-preview.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/img4989RemovebgPreviewpng.png"
+        },
+        {
+          "id": "nCCVP3qRRRlM",
+          "name": "Screen",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen.svg"
+        },
+        {
+          "id": "pMzniX6ERltK",
+          "name": "Screen 2",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen2.svg"
+        },
+        {
+          "id": "3jVON9rfkWMT",
+          "name": "Screen 3",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen3.svg"
+        },
+        {
+          "id": "v-vw856O_yVY",
+          "name": "Screen 4",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen4.svg"
+        },
+        {
+          "id": "JHWYOP56z2OB",
+          "name": "Screen 5",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen5.svg"
+        },
+        {
+          "id": "Phf_ipd8m5Pt",
+          "name": "Screen 6",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen6.svg"
+        },
+        {
+          "id": "9xB3K7NzpZf-",
+          "name": "Screen 7",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen7.svg"
+        },
+        {
+          "id": "KjrhSqpNsEXB",
+          "name": "Screen 8",
+          "filePath": "../public/plasmic/friends_tech_king/images/screen8.svg"
+        },
+        {
+          "id": "wBs7jRBab3Rl",
+          "name": "Home Hero.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/homeHeropng.png"
+        },
+        {
+          "id": "P-si3dlCOzLX",
+          "name": "whitelist.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/whitelistpng.png"
+        },
+        {
+          "id": "l97M8VixF0yx",
+          "name": "homewaitlist.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/homewaitlistpng.png"
+        },
+        {
+          "id": "5Q6N4a0GULuj",
+          "name": "waitlist.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/waitlistpng.png"
+        },
+        {
+          "id": "A7GMKFbyeM1I",
+          "name": "loan.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/loanpng.png"
+        },
+        {
+          "id": "ULtwuRe5zJv4",
+          "name": "community.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/communitypng.png"
+        },
+        {
+          "id": "VN3z_1Plj0iq",
+          "name": "home-airdrop.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/homeAirdroppng.png"
+        },
+        {
+          "id": "evgXDtaeByp5",
+          "name": "mint.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/mintpng.png"
+        },
+        {
+          "id": "FB5ak8xk_xxw",
+          "name": "portfolio Phone.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/portfolioPhonepng.png"
+        },
+        {
+          "id": "cxHHEk0GYmVB",
+          "name": "portfolio Phone.png 2",
+          "filePath": "../public/plasmic/friends_tech_king/images/portfolioPhonepng2.png"
+        },
+        {
+          "id": "weC6ianfEvdc",
+          "name": "Phone.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/phonepng.png"
+        },
+        {
+          "id": "35g2t-t1Aqh3",
+          "name": "Window.png 2",
+          "filePath": "../public/plasmic/friends_tech_king/images/windowpng2.png"
+        },
+        {
+          "id": "5yCJQbWdI-TZ",
+          "name": "Screenshot_2023-09-03_at_21.40.57-removebg-preview.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/screenshot20230903At214057RemovebgPreviewpng.png"
+        },
+        {
+          "id": "IWUFxMd6Iuq6",
+          "name": "abstract-vector-colorful-mesh-dark-background-futuristic-style-card-elegant-background-business-presentations-corrupted-point-sphere-chaos-aesthetics_1217-4607-removebg-preview.png",
+          "filePath": "../public/plasmic/friends_tech_king/images/abstractVectorColorfulMeshDarkBackgroundFuturisticStyleCardElegantBackgroundBusinessPresentationsCorruptedPointSphereChaosAesthetics12174607RemovebgPreviewpng.png"
+        },
+        {
+          "id": "ZGkG4170jUla",
+          "name": "image 2",
+          "filePath": "../public/plasmic/friends_tech_king/images/image2.png"
+        },
+        {
+          "id": "L2tVDD8wOqyF",
+          "name": "image 3",
+          "filePath": "../public/plasmic/friends_tech_king/images/image3.png"
+        },
+        {
+          "id": "PDkPh4jMZhV4",
+          "name": "image 4",
+          "filePath": "../public/plasmic/friends_tech_king/images/image4.png"
+        },
+        {
+          "id": "GtQUFqL6pGu0",
+          "name": "image 5",
+          "filePath": "../public/plasmic/friends_tech_king/images/image5.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/friends_tech_king/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "GUPoRqxORuo",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "lg06MkxP9f2",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "WJYMDpmg8bQ",
+        "name": "Screen",
+        "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+        "contextFilePath": "plasmic/friends_tech_king/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.308",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.308/dist/plasmic.schema.json"
+}

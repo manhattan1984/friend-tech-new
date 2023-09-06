@@ -1,0 +1,95 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 0px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - var(--token-cSJ2BJk-9JCq));
+  height: calc(100% + var(--token-cSJ2BJk-9JCq));
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: var(--token-cSJ2BJk-9JCq);
+}
+.freeBox__vxFqS {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__vxFqS > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - var(--token-oYI7ebdZitcv));
+  width: calc(100% + var(--token-oYI7ebdZitcv));
+}
+.freeBox__vxFqS > :global(.__wab_flex-container) > *,
+.freeBox__vxFqS > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__vxFqS > :global(.__wab_flex-container) > picture > img,
+.freeBox__vxFqS
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-oYI7ebdZitcv);
+}
+.freeBox___6Y6Ms {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  background: var(--token-poO92CcUDxvU);
+  flex-shrink: 0;
+  border-radius: 100%;
+  padding: var(--token-oYI7ebdZitcv);
+}
+.freeBox__hlC6 {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  color: var(--token-jgohepLVeKvh);
+}
+.h6 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.freeBox__hgVx {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot2 {
+  font-size: var(--token-o0Nl0Hefncwa);
+}

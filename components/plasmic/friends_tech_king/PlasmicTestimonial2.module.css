@@ -1,0 +1,121 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--token-RHsf9Urswwg4);
+  position: relative;
+  min-width: 0;
+  border-radius: 4px;
+  padding: var(--token-yH7NHVEkDLmt) var(--token-Xt5BcNRoi2kD);
+  border: 1px solid var(--token-Pxe4wDL2kJpb);
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--token-YwtVyY4mIFAX);
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.freeBox__o8H5L {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.freeBox__az3CG {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-top: var(--token-vvTBadrk1muM);
+  min-width: 0;
+}
+.freeBox__az3CG > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - var(--token-vvTBadrk1muM));
+  width: calc(100% + var(--token-vvTBadrk1muM));
+}
+.freeBox__az3CG > :global(.__wab_flex-container) > *,
+.freeBox__az3CG > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__az3CG > :global(.__wab_flex-container) > picture > img,
+.freeBox__az3CG
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-vvTBadrk1muM);
+}
+.freeBox__y0Hxb {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+}
+.img__eFyXw {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  height: var(--token-yH7NHVEkDLmt);
+  width: var(--token-yH7NHVEkDLmt);
+  object-position: 50% 10%;
+  flex-shrink: 0;
+  border-radius: 100%;
+}
+.img__eFyXw > picture > img {
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+.img__eFyXw > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+.freeBox__lOmli {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.freeBox__neksf {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.freeBox__tfLhP {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot3 {
+  font-size: 14px;
+}

@@ -1,0 +1,137 @@
+.testimonial {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  padding: var(--token-UEz8jpx4ZeEk) var(--token-02IfQLozsPKb);
+  border: 1px solid var(--token-Pxe4wDL2kJpb);
+}
+.group14 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-direction: column;
+  min-width: 0;
+}
+.group13 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-direction: column;
+  padding-bottom: var(--token-Tf_KtjkxGdsv);
+  min-width: 0;
+}
+.text {
+  display: block;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: var(--token-jDkFCCM00);
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.freeBox__sptmj {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.slotTargetChildren {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 51, 102, 1);
+  line-height: 1.6315;
+  letter-spacing: 0em;
+}
+.group12 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-direction: row;
+  min-width: 0;
+  min-height: 0;
+}
+.group12 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  margin-left: calc(0px - var(--token-Tf_KtjkxGdsv));
+  width: calc(100% + var(--token-Tf_KtjkxGdsv));
+}
+.group12 > :global(.__wab_flex-container) > *,
+.group12 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.group12 > :global(.__wab_flex-container) > picture > img,
+.group12
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-Tf_KtjkxGdsv);
+}
+.freeBox__qqhZw {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  max-width: 100%;
+  top: auto;
+  left: auto;
+  height: 60px;
+  flex-shrink: 0;
+}
+.img__ue58X {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 100%;
+}
+.img__ue58X > picture > img {
+  object-fit: cover;
+}
+.img__ue58X > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.group11 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-direction: column;
+  min-width: 0;
+}
+.slotTargetSlot {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 51, 102, 1);
+  line-height: 1.6315;
+  letter-spacing: 0em;
+}

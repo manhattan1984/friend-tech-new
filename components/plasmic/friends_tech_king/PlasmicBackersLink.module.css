@@ -1,0 +1,91 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-PcB_VOdOGI2g);
+  min-width: 0;
+  padding: 0px;
+}
+.link > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - var(--token-oYI7ebdZitcv));
+  width: calc(100% + var(--token-oYI7ebdZitcv));
+}
+.link > :global(.__wab_flex-container) > *,
+.link > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.link > :global(.__wab_flex-container) > picture > img,
+.link > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: var(--token-oYI7ebdZitcv);
+}
+.freeBox__n16Rq {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__n16Rq > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - var(--token-oYI7ebdZitcv));
+  width: calc(100% + var(--token-oYI7ebdZitcv));
+}
+.freeBox__n16Rq > :global(.__wab_flex-container) > *,
+.freeBox__n16Rq > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__n16Rq > :global(.__wab_flex-container) > picture > img,
+.freeBox__n16Rq
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-oYI7ebdZitcv);
+}
+.freeBox__wcomu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--token-oW80B2Q_Cufz);
+  height: var(--token-oW80B2Q_Cufz);
+  max-width: 100%;
+  padding: 0px;
+}
+.img__hiOyo {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__hiOyo > picture > img {
+  object-fit: cover;
+}
+.img__hiOyo > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.freeBox__stuxG {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
