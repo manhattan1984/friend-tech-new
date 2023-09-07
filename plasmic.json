@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -63,7 +63,8 @@
           "displayName": "hostless-condition-guard",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -83,7 +84,8 @@
           "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -354,6 +356,22 @@
             "name": "treeHelpers",
             "importPath": "@plasmicpkgs/antd5/skinny/registerTree"
           }
+        },
+        {
+          "id": "oPUhN99n4VXI",
+          "name": "AntdCollapse",
+          "displayName": "plasmic-antd5-collapse",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCollapse",
+          "helper": {
+            "name": "collapseHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerCollapse"
+          }
+        },
+        {
+          "id": "4mmDdnlyWx2k",
+          "name": "AntdCollapseItem",
+          "displayName": "plasmic-antd5-collapse-item",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCollapse"
         }
       ]
     },
@@ -822,6 +840,19 @@
           "cssFilePath": "plasmic/friends_tech_king/PlasmicWallet.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "0oyO6LjGlHzw",
+          "name": "ConnectButton",
+          "type": "managed",
+          "projectId": "sFqKXDN8rHnCDU91Y9JUYu",
+          "renderModuleFilePath": "plasmic/friends_tech_king/PlasmicConnectButton.tsx",
+          "importSpec": {
+            "modulePath": "ConnectButton.tsx"
+          },
+          "cssFilePath": "plasmic/friends_tech_king/PlasmicConnectButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -969,6 +1000,11 @@
           "id": "9ESfOEFv8w28",
           "name": "Icon18Icon",
           "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon18.tsx"
+        },
+        {
+          "id": "ETqfzbeKE61b",
+          "name": "Icon19Icon",
+          "moduleFilePath": "plasmic/friends_tech_king/icons/PlasmicIcon__Icon19.tsx"
         }
       ],
       "images": [

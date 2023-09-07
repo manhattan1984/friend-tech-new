@@ -73,26 +73,8 @@
   width: auto;
   max-width: 490px;
 }
-.freeBox {
-  display: flex;
+.connectButton:global(.__wab_instance) {
   position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  background: var(--token-jDkFCCM00);
-  min-width: 0;
-  border-radius: 4px;
-  padding: var(--token-Tf_KtjkxGdsv) 8px;
-}
-.text__mQk0R {
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  color: var(--token-pwMbOFqUx);
 }
 .button__ofS0O:global(.__wab_instance) {
   max-width: 100%;

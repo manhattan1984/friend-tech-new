@@ -45,9 +45,7 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_friends_tech_king.module.css"; // plasmic-import: sFqKXDN8rHnCDU91Y9JUYu/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: irj0wRv4NhUG/css
 
-import FacebookOriginalIcon from "./icons/PlasmicIcon__FacebookOriginal"; // plasmic-import: dOnxUFGxu7Qr/icon
-import InstagramOriginalIcon from "./icons/PlasmicIcon__InstagramOriginal"; // plasmic-import: jZ7iX4rLTSiw/icon
-import TikTokOriginalIcon from "./icons/PlasmicIcon__TikTokOriginal"; // plasmic-import: 5J6CDfNce4vO/icon
+import Icon19Icon from "./icons/PlasmicIcon__Icon19"; // plasmic-import: ETqfzbeKE61b/icon
 
 createPlasmicElementProxy;
 
@@ -88,6 +86,7 @@ export type PlasmicFooter__OverridesType = {
   copyright?: p.Flex<"div">;
   group21?: p.Flex<"div">;
   frame2?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
   text?: p.Flex<"div">;
 };
 
@@ -397,53 +396,55 @@ function PlasmicFooter__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.column4)}
           >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"content3"}
-              data-plasmic-override={overrides.content3}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.content3)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__q0B8
-                )}
-              >
-                {"Address"}
-              </div>
+            {true ? (
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"footerLinks3"}
-                data-plasmic-override={overrides.footerLinks3}
+                data-plasmic-name={"content3"}
+                data-plasmic-override={overrides.content3}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.footerLinks3)}
+                className={classNames(projectcss.all, sty.content3)}
               >
                 <div
-                  data-plasmic-name={"link8"}
-                  data-plasmic-override={overrides.link8}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.link8
+                    sty.text__q0B8
                   )}
                 >
-                  {"15 Railway Street \nAntrim BT41 4AE UK"}
+                  {"Address"}
                 </div>
-                <div
-                  data-plasmic-name={"link9"}
-                  data-plasmic-override={overrides.link9}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.link9
-                  )}
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"footerLinks3"}
+                  data-plasmic-override={overrides.footerLinks3}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.footerLinks3)}
                 >
-                  {"Monday To Sunday\n12:00 - 9:00 pm"}
-                </div>
+                  <div
+                    data-plasmic-name={"link8"}
+                    data-plasmic-override={overrides.link8}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.link8
+                    )}
+                  >
+                    {"15 Railway Street \nAntrim BT41 4AE UK"}
+                  </div>
+                  <div
+                    data-plasmic-name={"link9"}
+                    data-plasmic-override={overrides.link9}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.link9
+                    )}
+                  >
+                    {"Monday To Sunday\n12:00 - 9:00 pm"}
+                  </div>
+                </p.Stack>
               </p.Stack>
-            </p.Stack>
+            ) : null}
           </p.Stack>
         </p.Stack>
       </p.Stack>
@@ -466,20 +467,23 @@ function PlasmicFooter__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.frame2)}
           >
-            <FacebookOriginalIcon
-              className={classNames(projectcss.all, sty.svg__eozH)}
-              role={"img"}
-            />
-
-            <InstagramOriginalIcon
-              className={classNames(projectcss.all, sty.svg___2IVuy)}
-              role={"img"}
-            />
-
-            <TikTokOriginalIcon
-              className={classNames(projectcss.all, sty.svg__ebtu9)}
-              role={"img"}
-            />
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__mMnp
+              )}
+              component={Link}
+              href={"https://twitter.com/friendtech" as const}
+              platform={"nextjs"}
+            >
+              <Icon19Icon
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
           </p.Stack>
         </div>
         <div
@@ -527,6 +531,7 @@ const PlasmicDescendants = {
     "copyright",
     "group21",
     "frame2",
+    "svg",
     "text"
   ],
   columns: [
@@ -614,9 +619,10 @@ const PlasmicDescendants = {
   footerLinks3: ["footerLinks3", "link8", "link9"],
   link8: ["link8"],
   link9: ["link9"],
-  copyright: ["copyright", "group21", "frame2", "text"],
-  group21: ["group21", "frame2"],
-  frame2: ["frame2"],
+  copyright: ["copyright", "group21", "frame2", "svg", "text"],
+  group21: ["group21", "frame2", "svg"],
+  frame2: ["frame2", "svg"],
+  svg: ["svg"],
   text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -650,6 +656,7 @@ type NodeDefaultElementType = {
   copyright: "div";
   group21: "div";
   frame2: "div";
+  svg: "svg";
   text: "div";
 };
 
@@ -739,6 +746,7 @@ export const PlasmicFooter = Object.assign(
     copyright: makeNodeComponent("copyright"),
     group21: makeNodeComponent("group21"),
     frame2: makeNodeComponent("frame2"),
+    svg: makeNodeComponent("svg"),
     text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicFooter

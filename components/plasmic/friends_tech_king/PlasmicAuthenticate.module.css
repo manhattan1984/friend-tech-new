@@ -43,23 +43,9 @@
   position: relative;
   width: auto;
 }
-.button__x73Sb:global(.__wab_instance) {
+.connectButton__rSf4A:global(.__wab_instance) {
   max-width: 100%;
-  left: auto;
-  top: auto;
   position: relative;
-}
-.svg__r1JNi {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg___7GsuS {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
 }
 .button__xrrTb:global(.__wab_instance) {
   max-width: 100%;
@@ -169,21 +155,10 @@
 .benefitSection__eQar3:global(.__wab_instance) {
   max-width: 100%;
 }
-.button__yL9Zg:global(.__wab_instance) {
+.connectButton__shKgy:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-}
-.svg__cqkJ3 {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__nopLp {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+  width: auto;
 }
 .img__wLlns {
   position: relative;

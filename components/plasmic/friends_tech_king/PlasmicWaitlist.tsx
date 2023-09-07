@@ -38,6 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: SfWv_--dQ9Pb/component
 import Hero from "../../Hero"; // plasmic-import: 2S-DfRS0Ri3G/component
+import ConnectButton from "../../ConnectButton"; // plasmic-import: 0oyO6LjGlHzw/component
 import Button from "../../Button"; // plasmic-import: X48cJgHH48y/component
 import PageBenefit from "../../PageBenefit"; // plasmic-import: cI-UCGUt-dL5/component
 import BenefitSection from "../../BenefitSection"; // plasmic-import: wTnQKvx7xtRe/component
@@ -170,83 +171,14 @@ function PlasmicWaitlist__RenderFunc(props: {
               className={classNames("__wab_instance", sty.hero)}
               ctaButtons2={
                 <React.Fragment>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__mcrkP)}
-                    color={"blue" as const}
-                    onClick={async event => {
-                      const $steps = {};
-                      $steps["updateConnectWallet"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              variable: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "updateVariable",
-                                  interactionUuid: "SD_W6d_ztdei",
-                                  componentUuid: "cKtNscfl8RsZ",
-                                  argName: "variable"
-                                },
-                                () => ({
-                                  objRoot: $state,
-                                  variablePath: ["connectWallet"]
-                                })
-                              ),
-                              operation: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "updateVariable",
-                                  interactionUuid: "SD_W6d_ztdei",
-                                  componentUuid: "cKtNscfl8RsZ",
-                                  argName: "operation"
-                                },
-                                () => 4
-                              )
-                            };
-                            return __wrapUserFunction(
-                              {
-                                type: "InteractionLoc",
-                                actionName: "updateVariable",
-                                interactionUuid: "SD_W6d_ztdei",
-                                componentUuid: "cKtNscfl8RsZ"
-                              },
-                              () =>
-                                (({
-                                  variable,
-                                  value,
-                                  startIndex,
-                                  deleteCount
-                                }) => {
-                                  if (!variable) {
-                                    return;
-                                  }
-                                  const { objRoot, variablePath } = variable;
-
-                                  const oldValue = p.get(objRoot, variablePath);
-                                  p.set(objRoot, variablePath, !oldValue);
-                                  return !oldValue;
-                                })?.apply(null, [actionArgs]),
-                              actionArgs
-                            );
-                          })()
-                        : undefined;
-                      if (
-                        typeof $steps["updateConnectWallet"] === "object" &&
-                        typeof $steps["updateConnectWallet"].then === "function"
-                      ) {
-                        $steps["updateConnectWallet"] = await __wrapUserPromise(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "SD_W6d_ztdei",
-                            componentUuid: "cKtNscfl8RsZ"
-                          },
-                          $steps["updateConnectWallet"]
-                        );
-                      }
-                    }}
+                  <ConnectButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.connectButton___8XKcD
+                    )}
                   >
                     {"Join Now"}
-                  </Button>
+                  </ConnectButton>
                   <Button
                     className={classNames("__wab_instance", sty.button__wCzYw)}
                     ghost={true}
@@ -313,85 +245,14 @@ function PlasmicWaitlist__RenderFunc(props: {
                 "Join the Friend Tech waitlist by signing up. We'll keep you informed about upcoming developments and opportunities."
               }
               slot2={
-                true ? (
-                  <Button
-                    className={classNames("__wab_instance", sty.button__oNjoC)}
-                    color={"blue" as const}
-                    onClick={async event => {
-                      const $steps = {};
-                      $steps["updateConnectWallet"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              variable: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "updateVariable",
-                                  interactionUuid: "iPWoaj9HA4ax",
-                                  componentUuid: "cKtNscfl8RsZ",
-                                  argName: "variable"
-                                },
-                                () => ({
-                                  objRoot: $state,
-                                  variablePath: ["connectWallet"]
-                                })
-                              ),
-                              operation: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "updateVariable",
-                                  interactionUuid: "iPWoaj9HA4ax",
-                                  componentUuid: "cKtNscfl8RsZ",
-                                  argName: "operation"
-                                },
-                                () => 4
-                              )
-                            };
-                            return __wrapUserFunction(
-                              {
-                                type: "InteractionLoc",
-                                actionName: "updateVariable",
-                                interactionUuid: "iPWoaj9HA4ax",
-                                componentUuid: "cKtNscfl8RsZ"
-                              },
-                              () =>
-                                (({
-                                  variable,
-                                  value,
-                                  startIndex,
-                                  deleteCount
-                                }) => {
-                                  if (!variable) {
-                                    return;
-                                  }
-                                  const { objRoot, variablePath } = variable;
-
-                                  const oldValue = p.get(objRoot, variablePath);
-                                  p.set(objRoot, variablePath, !oldValue);
-                                  return !oldValue;
-                                })?.apply(null, [actionArgs]),
-                              actionArgs
-                            );
-                          })()
-                        : undefined;
-                      if (
-                        typeof $steps["updateConnectWallet"] === "object" &&
-                        typeof $steps["updateConnectWallet"].then === "function"
-                      ) {
-                        $steps["updateConnectWallet"] = await __wrapUserPromise(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "iPWoaj9HA4ax",
-                            componentUuid: "cKtNscfl8RsZ"
-                          },
-                          $steps["updateConnectWallet"]
-                        );
-                      }
-                    }}
-                  >
-                    {"Join Now"}
-                  </Button>
-                ) : null
+                <ConnectButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.connectButton__hShVm
+                  )}
+                >
+                  {"Join Now"}
+                </ConnectButton>
               }
               slot3={
                 true ? (

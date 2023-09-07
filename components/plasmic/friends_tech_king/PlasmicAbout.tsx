@@ -1334,6 +1334,7 @@ function PlasmicAbout__RenderFunc(props: {
                   data-plasmic-override={overrides.button3}
                   className={classNames("__wab_instance", sty.button3)}
                   color={"white" as const}
+                  link={`/loan`}
                 >
                   <div
                     className={classNames(

@@ -36,7 +36,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button3 from "../../Button3"; // plasmic-import: 6mO-YzPwqb-d/component
+import ConnectButton from "../../ConnectButton"; // plasmic-import: 0oyO6LjGlHzw/component
 import InfoHoldingComponent from "../../InfoHoldingComponent"; // plasmic-import: 2sweiwlaoYgh/component
 import BackersLink from "../../BackersLink"; // plasmic-import: Sl58UbzqihgE/component
 import CollateralOptionItem from "../../CollateralOptionItem"; // plasmic-import: 5NQDrFliC8CX/component
@@ -48,9 +48,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_friends_tech_king.module.css"; // plasmic-import: sFqKXDN8rHnCDU91Y9JUYu/projectcss
 import sty from "./PlasmicLoanHomepage.module.css"; // plasmic-import: pgGkyFmZe3k7/css
-
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: e58rgm-WFTW/icon
-import Icon12Icon from "./icons/PlasmicIcon__Icon12"; // plasmic-import: uC8bBJhPRpth/icon
 
 createPlasmicElementProxy;
 
@@ -177,86 +174,11 @@ function PlasmicLoanHomepage__RenderFunc(props: {
                 "Use more than 50 TOP coins as collateral for crypto loans with the highest loan-to-value ratio (90%). Get loans in stablecoins or crypto and withdraw instantly to your wallets or exchanges."
               }
             </p>
-            <Button3
-              className={classNames("__wab_instance", sty.button3__zO5H9)}
-              color={"blue" as const}
-              onClick={async event => {
-                const $steps = {};
-                $steps["updateVariable"] = true
-                  ? (() => {
-                      const actionArgs = {
-                        variable: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "MQesKf_NWZPS",
-                            componentUuid: "pgGkyFmZe3k7",
-                            argName: "variable"
-                          },
-                          () => ({
-                            objRoot: $state,
-                            variablePath: ["openWallet"]
-                          })
-                        ),
-                        operation: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "MQesKf_NWZPS",
-                            componentUuid: "pgGkyFmZe3k7",
-                            argName: "operation"
-                          },
-                          () => 4
-                        )
-                      };
-                      return __wrapUserFunction(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "MQesKf_NWZPS",
-                          componentUuid: "pgGkyFmZe3k7"
-                        },
-                        () =>
-                          (({ variable, value, startIndex, deleteCount }) => {
-                            if (!variable) {
-                              return;
-                            }
-                            const { objRoot, variablePath } = variable;
-
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
-                            return !oldValue;
-                          })?.apply(null, [actionArgs]),
-                        actionArgs
-                      );
-                    })()
-                  : undefined;
-                if (
-                  typeof $steps["updateVariable"] === "object" &&
-                  typeof $steps["updateVariable"].then === "function"
-                ) {
-                  $steps["updateVariable"] = await __wrapUserPromise(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariable",
-                      interactionUuid: "MQesKf_NWZPS",
-                      componentUuid: "pgGkyFmZe3k7"
-                    },
-                    $steps["updateVariable"]
-                  );
-                }
-              }}
+            <ConnectButton
+              className={classNames("__wab_instance", sty.connectButton__vHuNy)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__uu4Pg
-                )}
-              >
-                {"Get Loan"}
-              </div>
-            </Button3>
+              {"Get Loan"}
+            </ConnectButton>
           </div>
         ) : null}
         <p.Stack
@@ -553,86 +475,19 @@ function PlasmicLoanHomepage__RenderFunc(props: {
             ) : null}
           </p.Stack>
         ) : null}
-        <Button3
-          className={classNames("__wab_instance", sty.button3__e9AWp)}
-          color={"blue" as const}
-          onClick={async event => {
-            const $steps = {};
-            $steps["updateOpenWallet"] = true
-              ? (() => {
-                  const actionArgs = {
-                    variable: __wrapUserFunction(
-                      {
-                        type: "InteractionArgLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "ywPwohcDuQYK",
-                        componentUuid: "pgGkyFmZe3k7",
-                        argName: "variable"
-                      },
-                      () => ({
-                        objRoot: $state,
-                        variablePath: ["openWallet"]
-                      })
-                    ),
-                    operation: __wrapUserFunction(
-                      {
-                        type: "InteractionArgLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "ywPwohcDuQYK",
-                        componentUuid: "pgGkyFmZe3k7",
-                        argName: "operation"
-                      },
-                      () => 4
-                    )
-                  };
-                  return __wrapUserFunction(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariable",
-                      interactionUuid: "ywPwohcDuQYK",
-                      componentUuid: "pgGkyFmZe3k7"
-                    },
-                    () =>
-                      (({ variable, value, startIndex, deleteCount }) => {
-                        if (!variable) {
-                          return;
-                        }
-                        const { objRoot, variablePath } = variable;
-
-                        const oldValue = p.get(objRoot, variablePath);
-                        p.set(objRoot, variablePath, !oldValue);
-                        return !oldValue;
-                      })?.apply(null, [actionArgs]),
-                    actionArgs
-                  );
-                })()
-              : undefined;
-            if (
-              typeof $steps["updateOpenWallet"] === "object" &&
-              typeof $steps["updateOpenWallet"].then === "function"
-            ) {
-              $steps["updateOpenWallet"] = await __wrapUserPromise(
-                {
-                  type: "InteractionLoc",
-                  actionName: "updateVariable",
-                  interactionUuid: "ywPwohcDuQYK",
-                  componentUuid: "pgGkyFmZe3k7"
-                },
-                $steps["updateOpenWallet"]
-              );
-            }
-          }}
+        <ConnectButton
+          className={classNames("__wab_instance", sty.connectButton__zad91)}
         >
           <div
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__aiiRt
+              sty.text__cT1Gt
             )}
           >
             {"Get Loan"}
           </div>
-        </Button3>
+        </ConnectButton>
       </section>
       <section className={classNames(projectcss.all, sty.section___9Ufve)}>
         {true ? (
@@ -674,86 +529,11 @@ function PlasmicLoanHomepage__RenderFunc(props: {
             "Store, exchange stablecoins and crypto. Rewards, staking and loans integrated. "
           }
         </div>
-        <Button3
-          className={classNames("__wab_instance", sty.button3___8Woe4)}
-          color={"white" as const}
-          onClick={async event => {
-            const $steps = {};
-            $steps["updateOpenWallet"] = true
-              ? (() => {
-                  const actionArgs = {
-                    variable: __wrapUserFunction(
-                      {
-                        type: "InteractionArgLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "pk55EA-juv8_",
-                        componentUuid: "pgGkyFmZe3k7",
-                        argName: "variable"
-                      },
-                      () => ({
-                        objRoot: $state,
-                        variablePath: ["openWallet"]
-                      })
-                    ),
-                    operation: __wrapUserFunction(
-                      {
-                        type: "InteractionArgLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "pk55EA-juv8_",
-                        componentUuid: "pgGkyFmZe3k7",
-                        argName: "operation"
-                      },
-                      () => 4
-                    )
-                  };
-                  return __wrapUserFunction(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariable",
-                      interactionUuid: "pk55EA-juv8_",
-                      componentUuid: "pgGkyFmZe3k7"
-                    },
-                    () =>
-                      (({ variable, value, startIndex, deleteCount }) => {
-                        if (!variable) {
-                          return;
-                        }
-                        const { objRoot, variablePath } = variable;
-
-                        const oldValue = p.get(objRoot, variablePath);
-                        p.set(objRoot, variablePath, !oldValue);
-                        return !oldValue;
-                      })?.apply(null, [actionArgs]),
-                    actionArgs
-                  );
-                })()
-              : undefined;
-            if (
-              typeof $steps["updateOpenWallet"] === "object" &&
-              typeof $steps["updateOpenWallet"].then === "function"
-            ) {
-              $steps["updateOpenWallet"] = await __wrapUserPromise(
-                {
-                  type: "InteractionLoc",
-                  actionName: "updateVariable",
-                  interactionUuid: "pk55EA-juv8_",
-                  componentUuid: "pgGkyFmZe3k7"
-                },
-                $steps["updateOpenWallet"]
-              );
-            }
-          }}
+        <ConnectButton
+          className={classNames("__wab_instance", sty.connectButton__x0Z0G)}
         >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__l5L
-            )}
-          >
-            {"Get Loan"}
-          </div>
-        </Button3>
+          {"Get Loan"}
+        </ConnectButton>
       </section>
       <section className={classNames(projectcss.all, sty.section___9AIx9)}>
         <h6

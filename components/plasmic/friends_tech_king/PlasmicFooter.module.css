@@ -466,10 +466,10 @@
 }
 .content3 {
   height: auto;
-  display: flex;
   position: relative;
   align-self: stretch;
   flex-direction: column;
+  display: none;
 }
 .content3 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -604,8 +604,11 @@
   > img {
   margin-left: 30px;
 }
-.svg__eozH {
+.link__mMnp {
   position: relative;
+  display: flex;
+}
+.svg {
   object-fit: cover;
   max-width: 100%;
   color: #fff;
@@ -613,27 +616,6 @@
   height: 20px;
   display: block;
   overflow: hidden;
-  flex-shrink: 0;
-}
-.svg___2IVuy {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  display: block;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.svg__ebtu9 {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  display: block;
   flex-shrink: 0;
 }
 .text {

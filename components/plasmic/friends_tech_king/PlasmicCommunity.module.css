@@ -43,23 +43,9 @@
   position: relative;
   width: auto;
 }
-.button__bqoEq:global(.__wab_instance) {
+.connectButton__eJc15:global(.__wab_instance) {
   max-width: 100%;
-  left: auto;
-  top: auto;
   position: relative;
-}
-.svg__zjUk {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__hCkQo {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
 }
 .button__nYn9B:global(.__wab_instance) {
   max-width: 100%;
@@ -204,21 +190,10 @@
   max-width: 100%;
   position: relative;
 }
-.button__uQm4I:global(.__wab_instance) {
+.connectButton__wpQqe:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-}
-.svg__ur7Y5 {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__xbvn {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+  width: auto;
 }
 .img__v4Dcz {
   position: relative;

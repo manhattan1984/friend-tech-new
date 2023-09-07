@@ -38,6 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: SfWv_--dQ9Pb/component
 import Hero from "../../Hero"; // plasmic-import: 2S-DfRS0Ri3G/component
+import ConnectButton from "../../ConnectButton"; // plasmic-import: 0oyO6LjGlHzw/component
 import Button from "../../Button"; // plasmic-import: X48cJgHH48y/component
 import BenefitSection from "../../BenefitSection"; // plasmic-import: wTnQKvx7xtRe/component
 import Footer from "../../Footer"; // plasmic-import: irj0wRv4NhUG/component
@@ -69,7 +70,7 @@ export type PlasmicHome__OverridesType = {
   design?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
   hero?: p.Flex<typeof Hero>;
-  freeBox?: p.Flex<"div">;
+  connectButton?: p.Flex<typeof ConnectButton>;
   whitelist?: p.Flex<"div">;
   waitlist?: p.Flex<"div">;
   loan?: p.Flex<"div">;
@@ -180,25 +181,12 @@ function PlasmicHome__RenderFunc(props: {
               className={classNames("__wab_instance", sty.hero)}
               ctaButtons2={
                 <React.Fragment>
-                  <div
-                    data-plasmic-name={"freeBox"}
-                    data-plasmic-override={overrides.freeBox}
-                    className={classNames(
-                      projectcss.all,
-                      sty.freeBox,
-                      "interact-button" as const
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mQk0R
-                      )}
-                    >
-                      {"Get Started"}
-                    </div>
-                  </div>
+                  <ConnectButton
+                    data-plasmic-name={"connectButton"}
+                    data-plasmic-override={overrides.connectButton}
+                    className={classNames("__wab_instance", sty.connectButton)}
+                  />
+
                   <Button
                     className={classNames("__wab_instance", sty.button__ofS0O)}
                     ghost={true}
@@ -649,7 +637,7 @@ const PlasmicDescendants = {
     "design",
     "navbar",
     "hero",
-    "freeBox",
+    "connectButton",
     "whitelist",
     "waitlist",
     "loan",
@@ -664,7 +652,7 @@ const PlasmicDescendants = {
     "design",
     "navbar",
     "hero",
-    "freeBox",
+    "connectButton",
     "whitelist",
     "waitlist",
     "loan",
@@ -676,8 +664,8 @@ const PlasmicDescendants = {
     "footer"
   ],
   navbar: ["navbar"],
-  hero: ["hero", "freeBox"],
-  freeBox: ["freeBox"],
+  hero: ["hero", "connectButton"],
+  connectButton: ["connectButton"],
   whitelist: ["whitelist"],
   waitlist: ["waitlist"],
   loan: ["loan"],
@@ -696,7 +684,7 @@ type NodeDefaultElementType = {
   design: "div";
   navbar: typeof Navbar;
   hero: typeof Hero;
-  freeBox: "div";
+  connectButton: typeof ConnectButton;
   whitelist: "div";
   waitlist: "div";
   loan: "div";
@@ -771,7 +759,7 @@ export const PlasmicHome = Object.assign(
     design: makeNodeComponent("design"),
     navbar: makeNodeComponent("navbar"),
     hero: makeNodeComponent("hero"),
-    freeBox: makeNodeComponent("freeBox"),
+    connectButton: makeNodeComponent("connectButton"),
     whitelist: makeNodeComponent("whitelist"),
     waitlist: makeNodeComponent("waitlist"),
     loan: makeNodeComponent("loan"),
