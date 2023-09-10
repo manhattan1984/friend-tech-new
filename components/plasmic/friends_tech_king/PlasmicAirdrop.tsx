@@ -180,7 +180,7 @@ function PlasmicAirdrop__RenderFunc(props: {
                       data-plasmic-override={overrides.button}
                       className={classNames("__wab_instance", sty.button)}
                       ghost={true}
-                      link={"/airdrop/#airdrop" as const}
+                      link={"/airdrop/#airdrop"}
                     >
                       {"Learn More"}
                     </Button>
@@ -203,13 +203,13 @@ function PlasmicAirdrop__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__kDit)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/homeAirdroppng.png",
                       fullWidth: 576,
@@ -225,7 +225,7 @@ function PlasmicAirdrop__RenderFunc(props: {
           >
             <div
               className={classNames(projectcss.all, sty.freeBox__x1DZd)}
-              id={"airdrop" as const}
+              id={"airdrop"}
             >
               <BenefitSection
                 data-plasmic-name={"benefitSection"}
@@ -246,29 +246,27 @@ function PlasmicAirdrop__RenderFunc(props: {
                   </ConnectButton>
                 }
                 slot3={
-                  true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__tNci)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__c4Tk)}
-                        displayHeight={"100%" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"100%" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/friends_tech_king/images/screenshot20230903At214057RemovebgPreviewpng.png",
-                          fullWidth: 323,
-                          fullHeight: 367,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  ) : null
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__tNci)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__c4Tk)}
+                      displayHeight={"100%"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/friends_tech_king/images/screenshot20230903At214057RemovebgPreviewpng.png",
+                        fullWidth: 323,
+                        fullHeight: 367,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
                 }
               >
                 {"Claim Your Airdrop"}

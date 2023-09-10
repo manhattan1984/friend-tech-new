@@ -161,1133 +161,973 @@ function PlasmicInvestment__RenderFunc(props: {
             sty.root
           )}
         >
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__mmeLp)}>
-              <ConnectWallet
-                data-plasmic-name={"connectWallet"}
-                data-plasmic-override={overrides.connectWallet}
-                className={classNames("__wab_instance", sty.connectWallet)}
-                connectWallet={(() => {
-                  try {
-                    return $state.connectWallet;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return undefined;
-                    }
-                    throw e;
+          <div className={classNames(projectcss.all, sty.freeBox__mmeLp)}>
+            <ConnectWallet
+              data-plasmic-name={"connectWallet"}
+              data-plasmic-override={overrides.connectWallet}
+              className={classNames("__wab_instance", sty.connectWallet)}
+              connectWallet={(() => {
+                try {
+                  return $state.connectWallet;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return undefined;
                   }
-                })()}
-              />
-
-              <Navbar
-                data-plasmic-name={"navbar"}
-                data-plasmic-override={overrides.navbar}
-                className={classNames("__wab_instance", sty.navbar)}
-              />
-
-              <Hero
-                data-plasmic-name={"hero"}
-                data-plasmic-override={overrides.hero}
-                className={classNames("__wab_instance", sty.hero)}
-                ctaButtons2={
-                  <React.Fragment>
-                    <ConnectButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.connectButton__rcu8J
-                      )}
-                    />
-
-                    <Button
-                      data-plasmic-name={"button"}
-                      data-plasmic-override={overrides.button}
-                      className={classNames("__wab_instance", sty.button)}
-                      ghost={true}
-                      link={"/investment/about-investment" as const}
-                    >
-                      {"Learn More"}
-                    </Button>
-                  </React.Fragment>
+                  throw e;
                 }
-                heroHeading2={
-                  <React.Fragment>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___1BsPp
-                      )}
-                    >
-                      {"Welcome to Friend.Tech"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bIpiO
-                      )}
-                    >
-                      {"Don\u2019t Delay, Invest Today"}
-                    </div>
-                  </React.Fragment>
-                }
-                slot={
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__cyAf)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={
-                      "https://coinhashtxt.com/wp-content/uploads/2022/08/woman-checking-investment-account-VT774VR.jpg" as const
-                    }
+              })()}
+            />
+
+            <Navbar
+              data-plasmic-name={"navbar"}
+              data-plasmic-override={overrides.navbar}
+              className={classNames("__wab_instance", sty.navbar)}
+            />
+
+            <Hero
+              data-plasmic-name={"hero"}
+              data-plasmic-override={overrides.hero}
+              className={classNames("__wab_instance", sty.hero)}
+              ctaButtons2={
+                <React.Fragment>
+                  <ConnectButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.connectButton__rcu8J
+                    )}
                   />
+
+                  <Button
+                    data-plasmic-name={"button"}
+                    data-plasmic-override={overrides.button}
+                    className={classNames("__wab_instance", sty.button)}
+                    ghost={true}
+                    link={"/investment/about-investment"}
+                  >
+                    {"Learn More"}
+                  </Button>
+                </React.Fragment>
+              }
+              heroHeading2={
+                <React.Fragment>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1BsPp
+                    )}
+                  >
+                    {"Welcome to Friend.Tech"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bIpiO
+                    )}
+                  >
+                    {"Don\u2019t Delay, Invest Today"}
+                  </div>
+                </React.Fragment>
+              }
+              slot={
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__cyAf)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={
+                    "https://coinhashtxt.com/wp-content/uploads/2022/08/woman-checking-investment-account-VT774VR.jpg"
+                  }
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__hIVoS
+                )}
+              >
+                {
+                  "friend.tech is a legal company registered in UK. We provide trading solutions to our worldwide customers to trade in foreign exchange, crypto coins and bitcoins metals like gold and silver."
                 }
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__qrqWw)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__q6Tcm
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h1
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.__wab_text,
+                          sty.h1__bvTe
+                        )}
+                      >
+                        {"15+ "}
+                      </h1>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__j79C
+                  )}
+                >
+                  {"Years of Experience"}
+                </div>
+              </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__fovE7)}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__hIVoS
+                    sty.text__sasAs
                   )}
                 >
-                  {
-                    "friend.tech is a legal company registered in UK. We provide trading solutions to our worldwide customers to trade in foreign exchange, crypto coins and bitcoins metals like gold and silver."
-                  }
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h1
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.__wab_text,
+                          sty.h1___5RiJa
+                        )}
+                      >
+                        {"99K"}
+                      </h1>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__qrqWw)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__q6Tcm
-                    )}
-                  >
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      {
-                        <h1
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h1,
-                            projectcss.__wab_text,
-                            sty.h1__bvTe
-                          )}
-                        >
-                          {"15+ "}
-                        </h1>
-                      }
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__j79C
-                    )}
-                  >
-                    {"Years of Experience"}
-                  </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__kmqO
+                  )}
+                >
+                  {"Satisfied & Happy Users"}
                 </div>
+              </p.Stack>
+            </Hero>
+            <section className={classNames(projectcss.all, sty.section__miMj4)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__oD4GW)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={
+                  "https://coinhashtxt.com/wp-content/uploads/2022/08/client_4-1-150x150.png"
+                }
+              />
+            </section>
+            <section
+              className={classNames(projectcss.all, sty.section__cmHv7)}
+              id={"about-investment"}
+            >
+              <h6
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h6,
+                  projectcss.__wab_text,
+                  sty.h6__iYIT
+                )}
+              >
+                {"About us"}
+              </h6>
+              <h3
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h3,
+                  projectcss.__wab_text,
+                  sty.h3__vUOa
+                )}
+              >
+                {"About friend.tech"}
+              </h3>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___0KOlN
+                )}
+              >
+                {
+                  "Friendtech is the first web3 decentralized Chain protocol built across all chains to analyze and maximize profits and security manage potential security options in its own interface"
+                }
+              </div>
+              <ConnectButton
+                className={classNames(
+                  "__wab_instance",
+                  sty.connectButton__jUlEx
+                )}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__wJj6)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={
+                  "https://coinhashtxt.com/wp-content/uploads/2022/08/business-freelance-and-work-concept-satisfied-fe-B8C2PCR.jpg"
+                }
+              />
+            </section>
+            <section className={classNames(projectcss.all, sty.section__djrfx)}>
+              <h6
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h6,
+                  projectcss.__wab_text,
+                  sty.h6__zcAa0
+                )}
+              >
+                {"How It Works"}
+              </h6>
+              <h3
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h3,
+                  projectcss.__wab_text,
+                  sty.h3__mVax1
+                )}
+              >
+                {"How friend.tech works"}
+              </h3>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__wkHdA
+                )}
+              >
+                {
+                  "We provide our investors with easy add to interact one on one with our professional traders and also copy their trades."
+                }
+              </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wk7DZ)}
+              >
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__fovE7)}
+                  className={classNames(projectcss.all, sty.freeBox__ziJYo)}
                 >
                   <div
+                    className={classNames(projectcss.all, sty.freeBox___2Hv3M)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__sBOpw)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://coinhashtxt.com/wp-content/uploads/2022/08/icon_1_3.png"
+                      }
+                    />
+                  </div>
+                  <h3
                     className={classNames(
                       projectcss.all,
+                      projectcss.h3,
                       projectcss.__wab_text,
-                      sty.text__sasAs
+                      sty.h3__quLtt
                     )}
                   >
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      {
-                        <h1
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h1,
-                            projectcss.__wab_text,
-                            sty.h1___5RiJa
-                          )}
-                        >
-                          {"99K"}
-                        </h1>
-                      }
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  </div>
+                    {"ETF"}
+                  </h3>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__kmqO
+                      sty.text__ncDte
                     )}
                   >
-                    {"Satisfied & Happy Users"}
+                    {
+                      " ETF? Like a mutual fund, an ETF is a pooled investment fund that offers an investor an interest in a professionally managed, diversified portfolio of investments."
+                    }
                   </div>
                 </p.Stack>
-              </Hero>
-              <section
-                className={classNames(projectcss.all, sty.section__miMj4)}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__oD4GW)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={
-                    "https://coinhashtxt.com/wp-content/uploads/2022/08/client_4-1-150x150.png" as const
-                  }
-                />
-              </section>
-              <section
-                className={classNames(projectcss.all, sty.section__cmHv7)}
-                id={"about-investment" as const}
-              >
-                <h6
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6__iYIT
-                  )}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__dVot)}
                 >
-                  {"About us"}
-                </h6>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__vUOa
-                  )}
-                >
-                  {"About friend.tech"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___0KOlN
-                  )}
-                >
-                  {
-                    "Friendtech is the first web3 decentralized Chain protocol built across all chains to analyze and maximize profits and security manage potential security options in its own interface"
-                  }
-                </div>
-                <ConnectButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.connectButton__jUlEx
-                  )}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__wJj6)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={
-                    "https://coinhashtxt.com/wp-content/uploads/2022/08/business-freelance-and-work-concept-satisfied-fe-B8C2PCR.jpg" as const
-                  }
-                />
-              </section>
-              <section
-                className={classNames(projectcss.all, sty.section__djrfx)}
-              >
-                <h6
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6__zcAa0
-                  )}
-                >
-                  {"How It Works"}
-                </h6>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__mVax1
-                  )}
-                >
-                  {"How friend.tech works"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__wkHdA
-                  )}
-                >
-                  {
-                    "We provide our investors with easy add to interact one on one with our professional traders and also copy their trades."
-                  }
-                </div>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__wk7DZ)}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__tvsGi)}
                   >
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ziJYo
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___2Hv3M
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__sBOpw)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              loading={"lazy" as const}
-                              src={
-                                "https://coinhashtxt.com/wp-content/uploads/2022/08/icon_1_3.png" as const
-                              }
-                            />
-                          </div>
-                        ) : null}
-                        <h3
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3__quLtt
-                          )}
-                        >
-                          {"ETF"}
-                        </h3>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ncDte
-                          )}
-                        >
-                          {
-                            " ETF? Like a mutual fund, an ETF is a pooled investment fund that offers an investor an interest in a professionally managed, diversified portfolio of investments."
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__dVot
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__tvsGi
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__rDfNy)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              loading={"lazy" as const}
-                              src={
-                                "https://coinhashtxt.com/wp-content/uploads/2022/08/icon_2_3.png" as const
-                              }
-                            />
-                          </div>
-                        ) : null}
-                        <h3
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3__tHIcE
-                          )}
-                        >
-                          {"API"}
-                        </h3>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__pmHhU
-                          )}
-                        >
-                          {
-                            "For investment purposes An API (Application Programming Interface) is a set of functions that allows applications to access data and interact with external software components."
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__zqOJr
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__gsZ2K
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__sjBnA)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              loading={"lazy" as const}
-                              src={
-                                "https://coinhashtxt.com/wp-content/uploads/2022/08/icon_2_3.png" as const
-                              }
-                            />
-                          </div>
-                        ) : null}
-                        <h3
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3__vateH
-                          )}
-                        >
-                          {"Start Invest"}
-                        </h3>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__o0HcL
-                          )}
-                        >
-                          {
-                            "Click on the link below and visit our mouthwatering offers."
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                  </p.Stack>
-                ) : null}
-                <ConnectButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.connectButton___0NLnm
-                  )}
-                />
-              </section>
-              <section
-                className={classNames(projectcss.all, sty.section__nYr4)}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__v70GZ)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={
-                    "https://coinhashtxt.com/wp-content/uploads/2022/08/couple-paying-with-credit-card-38BCU7P.jpeg" as const
-                  }
-                />
-
-                <h6
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6__v4W0
-                  )}
-                >
-                  {"why choose us"}
-                </h6>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__dqGb2
-                  )}
-                >
-                  {"Dreams Come True When You Invest"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__c6WoP
-                  )}
-                >
-                  {
-                    "Recent times we\u2019ve helped and guide over thousands of millions of investors achieve their dream goal because they choose to invest wisely."
-                  }
-                </div>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___5AjKc)}
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__rDfNy)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://coinhashtxt.com/wp-content/uploads/2022/08/icon_2_3.png"
+                      }
+                    />
+                  </div>
+                  <h3
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h3,
+                      projectcss.__wab_text,
+                      sty.h3__tHIcE
+                    )}
                   >
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__uv1Zl
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___6NPzK
-                            )}
-                          >
-                            <Icon13Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___7KlG
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6___2EQfm
-                          )}
-                        >
-                          {" Real Time Checkup "}
-                        </h6>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__wxJpE
-                          )}
-                        >
-                          {
-                            " Make sure to inform of live support chat on the country where which you are interacting from. "
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___5Aucz
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__axQln
-                            )}
-                          >
-                            <Icon14Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__cvqf4
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__w8AKs
-                          )}
-                        >
-                          {"Safe Passcode"}
-                        </h6>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__e6Izt
-                          )}
-                        >
-                          {
-                            " As an investor your passcode should and must be kept private,create a unique passcode and secure your investment. "
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__vvFga
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__kaLmd
-                            )}
-                          >
-                            <Icon15Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__niR8M
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__j0AZd
-                          )}
-                        >
-                          {"Full Time Service"}
-                        </h6>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___8K0Ke
-                          )}
-                        >
-                          {" We are available 24/7, week-in and week-out. "}
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                  </p.Stack>
-                ) : null}
-              </section>
-              <section
-                className={classNames(projectcss.all, sty.section__oAp8M)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__a253K
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <h2
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h2,
-                          projectcss.__wab_text,
-                          sty.h2__zVw0S
-                        )}
-                      >
-                        {"1,200+"}
-                      </h2>
-                    }
-                    <React.Fragment>{"Loyal Clients"}</React.Fragment>
-                  </React.Fragment>
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__z8Q2O
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <h2
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h2,
-                          projectcss.__wab_text,
-                          sty.h2__cFjsY
-                        )}
-                      >
-                        {"30%"}
-                      </h2>
-                    }
-                    <React.Fragment>{"Avg Annual Return"}</React.Fragment>
-                  </React.Fragment>
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___05Yru
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <h2
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h2,
-                          projectcss.__wab_text,
-                          sty.h2__ioaem
-                        )}
-                      >
-                        {"7+"}
-                      </h2>
-                    }
-                    <React.Fragment>{"Years Of Experience"}</React.Fragment>
-                  </React.Fragment>
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___4I2D
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <h2
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h2,
-                          projectcss.__wab_text,
-                          sty.h2___912UB
-                        )}
-                      >
-                        {"110M+"}
-                      </h2>
-                    }
-                    <React.Fragment>{"Total Invested"}</React.Fragment>
-                  </React.Fragment>
-                </div>
-              </section>
-              <section
-                className={classNames(projectcss.all, sty.section__qcXDb)}
-              >
-                <h6
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6___6OEcb
-                  )}
-                >
-                  {"Our Services"}
-                </h6>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__c6Ssz
-                  )}
-                >
-                  {"friend.tech financial Services"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__fmiuK
-                  )}
-                >
-                  {"Reasons why CoinHash is the lead in the field of investing"}
-                </div>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__wq3CB)}
+                    {"API"}
+                  </h3>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pmHhU
+                    )}
                   >
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__qeXoW
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___01Z6B
-                            )}
-                          >
-                            <Icon16Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__aylgF
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__y8Rip
-                          )}
-                        >
-                          {" Retirement Plans "}
-                        </h6>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ppscg
-                          )}
-                        >
-                          {
-                            " So many have actually been using our Gold plan for a retirement package,why waist more time,sign up now ! "
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__dOju4
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__dV7Yw
-                            )}
-                          >
-                            <Icon17Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__qp20V
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__bqDXc
-                          )}
-                        >
-                          {" Risk Management "}
-                        </h6>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__j0EEh
-                          )}
-                        >
-                          {
-                            " Customer service is very important, as a result of customer support, professional advice and proper risk management. "
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__vNoU3
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__jdcoy
-                            )}
-                          >
-                            <Icon18Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__yu71V
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__lH0HB
-                          )}
-                        >
-                          {"Estate Planning"}
-                        </h6>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__m9L
-                          )}
-                        >
-                          {
-                            " Estate planning is available for our Golden Plan investors only "
-                          }
-                        </div>
-                      </p.Stack>
-                    ) : null}
-                  </p.Stack>
-                ) : null}
-              </section>
-              <section
-                className={classNames(projectcss.all, sty.section__cxqpL)}
-              >
-                <h6
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6__ofPaw
-                  )}
+                    {
+                      "For investment purposes An API (Application Programming Interface) is a set of functions that allows applications to access data and interact with external software components."
+                    }
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__zqOJr)}
                 >
-                  {"invest now"}
-                </h6>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__ovji
-                  )}
-                >
-                  {"We Know How To Invest Your Money"}
-                </h3>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__gYnJn)}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gsZ2K)}
                   >
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__iaqrs
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__yjV7
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__mrRpa)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              loading={"lazy" as const}
-                              src={
-                                "https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-6.png" as const
-                              }
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__lPhi
-                          )}
-                        >
-                          {"Any Investment You Want"}
-                        </h6>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__xSqiQ
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__eLGja
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__iIeQz)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              loading={"lazy" as const}
-                              src={
-                                "https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-7.png" as const
-                              }
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__wsbrt
-                          )}
-                        >
-                          {"No Investment Fee"}
-                        </h6>
-                      </p.Stack>
-                    ) : null}
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ude8
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___0EFBt
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__s71Yd)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              loading={"lazy" as const}
-                              src={
-                                "https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-8.png" as const
-                              }
-                            />
-                          </div>
-                        ) : null}
-                        <h6
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h6,
-                            projectcss.__wab_text,
-                            sty.h6__kUsdE
-                          )}
-                        >
-                          {"Most Secure Investment"}
-                        </h6>
-                      </p.Stack>
-                    ) : null}
-                  </p.Stack>
-                ) : null}
-                <ConnectButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.connectButton__v5D7S
-                  )}
-                />
-              </section>
-              <Footer
-                data-plasmic-name={"footer"}
-                data-plasmic-override={overrides.footer}
-                className={classNames("__wab_instance", sty.footer)}
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__sjBnA)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://coinhashtxt.com/wp-content/uploads/2022/08/icon_2_3.png"
+                      }
+                    />
+                  </div>
+                  <h3
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h3,
+                      projectcss.__wab_text,
+                      sty.h3__vateH
+                    )}
+                  >
+                    {"Start Invest"}
+                  </h3>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__o0HcL
+                    )}
+                  >
+                    {
+                      "Click on the link below and visit our mouthwatering offers."
+                    }
+                  </div>
+                </p.Stack>
+              </p.Stack>
+              <ConnectButton
+                className={classNames(
+                  "__wab_instance",
+                  sty.connectButton___0NLnm
+                )}
               />
-            </div>
-          ) : null}
+            </section>
+            <section className={classNames(projectcss.all, sty.section__nYr4)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__v70GZ)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={
+                  "https://coinhashtxt.com/wp-content/uploads/2022/08/couple-paying-with-credit-card-38BCU7P.jpeg"
+                }
+              />
+
+              <h6
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h6,
+                  projectcss.__wab_text,
+                  sty.h6__v4W0
+                )}
+              >
+                {"why choose us"}
+              </h6>
+              <h3
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h3,
+                  projectcss.__wab_text,
+                  sty.h3__dqGb2
+                )}
+              >
+                {"Dreams Come True When You Invest"}
+              </h3>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__c6WoP
+                )}
+              >
+                {
+                  "Recent times we\u2019ve helped and guide over thousands of millions of investors achieve their dream goal because they choose to invest wisely."
+                }
+              </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___5AjKc)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__uv1Zl)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___6NPzK)}
+                  >
+                    <Icon13Icon
+                      className={classNames(projectcss.all, sty.svg___7KlG)}
+                      role={"img"}
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6___2EQfm
+                    )}
+                  >
+                    {" Real Time Checkup "}
+                  </h6>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wxJpE
+                    )}
+                  >
+                    {
+                      " Make sure to inform of live support chat on the country where which you are interacting from. "
+                    }
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___5Aucz)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__axQln)}
+                  >
+                    <Icon14Icon
+                      className={classNames(projectcss.all, sty.svg__cvqf4)}
+                      role={"img"}
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__w8AKs
+                    )}
+                  >
+                    {"Safe Passcode"}
+                  </h6>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__e6Izt
+                    )}
+                  >
+                    {
+                      " As an investor your passcode should and must be kept private,create a unique passcode and secure your investment. "
+                    }
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vvFga)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kaLmd)}
+                  >
+                    <Icon15Icon
+                      className={classNames(projectcss.all, sty.svg__niR8M)}
+                      role={"img"}
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__j0AZd
+                    )}
+                  >
+                    {"Full Time Service"}
+                  </h6>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___8K0Ke
+                    )}
+                  >
+                    {" We are available 24/7, week-in and week-out. "}
+                  </div>
+                </p.Stack>
+              </p.Stack>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__oAp8M)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__a253K
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__zVw0S
+                      )}
+                    >
+                      {"1,200+"}
+                    </h2>
+                  }
+                  <React.Fragment>{"Loyal Clients"}</React.Fragment>
+                </React.Fragment>
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__z8Q2O
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__cFjsY
+                      )}
+                    >
+                      {"30%"}
+                    </h2>
+                  }
+                  <React.Fragment>{"Avg Annual Return"}</React.Fragment>
+                </React.Fragment>
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___05Yru
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__ioaem
+                      )}
+                    >
+                      {"7+"}
+                    </h2>
+                  }
+                  <React.Fragment>{"Years Of Experience"}</React.Fragment>
+                </React.Fragment>
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___4I2D
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2___912UB
+                      )}
+                    >
+                      {"110M+"}
+                    </h2>
+                  }
+                  <React.Fragment>{"Total Invested"}</React.Fragment>
+                </React.Fragment>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__qcXDb)}>
+              <h6
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h6,
+                  projectcss.__wab_text,
+                  sty.h6___6OEcb
+                )}
+              >
+                {"Our Services"}
+              </h6>
+              <h3
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h3,
+                  projectcss.__wab_text,
+                  sty.h3__c6Ssz
+                )}
+              >
+                {"friend.tech financial Services"}
+              </h3>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__fmiuK
+                )}
+              >
+                {"Reasons why CoinHash is the lead in the field of investing"}
+              </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wq3CB)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__qeXoW)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___01Z6B)}
+                  >
+                    <Icon16Icon
+                      className={classNames(projectcss.all, sty.svg__aylgF)}
+                      role={"img"}
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__y8Rip
+                    )}
+                  >
+                    {" Retirement Plans "}
+                  </h6>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ppscg
+                    )}
+                  >
+                    {
+                      " So many have actually been using our Gold plan for a retirement package,why waist more time,sign up now ! "
+                    }
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__dOju4)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__dV7Yw)}
+                  >
+                    <Icon17Icon
+                      className={classNames(projectcss.all, sty.svg__qp20V)}
+                      role={"img"}
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__bqDXc
+                    )}
+                  >
+                    {" Risk Management "}
+                  </h6>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__j0EEh
+                    )}
+                  >
+                    {
+                      " Customer service is very important, as a result of customer support, professional advice and proper risk management. "
+                    }
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vNoU3)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jdcoy)}
+                  >
+                    <Icon18Icon
+                      className={classNames(projectcss.all, sty.svg__yu71V)}
+                      role={"img"}
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__lH0HB
+                    )}
+                  >
+                    {"Estate Planning"}
+                  </h6>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__m9L
+                    )}
+                  >
+                    {
+                      " Estate planning is available for our Golden Plan investors only "
+                    }
+                  </div>
+                </p.Stack>
+              </p.Stack>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__cxqpL)}>
+              <h6
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h6,
+                  projectcss.__wab_text,
+                  sty.h6__ofPaw
+                )}
+              >
+                {"invest now"}
+              </h6>
+              <h3
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h3,
+                  projectcss.__wab_text,
+                  sty.h3__ovji
+                )}
+              >
+                {"We Know How To Invest Your Money"}
+              </h3>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__gYnJn)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__iaqrs)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__yjV7)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__mrRpa)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-6.png"
+                      }
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__lPhi
+                    )}
+                  >
+                    {"Any Investment You Want"}
+                  </h6>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__xSqiQ)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__eLGja)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__iIeQz)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-7.png"
+                      }
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__wsbrt
+                    )}
+                  >
+                    {"No Investment Fee"}
+                  </h6>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ude8)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___0EFBt)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__s71Yd)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-8.png"
+                      }
+                    />
+                  </div>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__kUsdE
+                    )}
+                  >
+                    {"Most Secure Investment"}
+                  </h6>
+                </p.Stack>
+              </p.Stack>
+              <ConnectButton
+                className={classNames(
+                  "__wab_instance",
+                  sty.connectButton__v5D7S
+                )}
+              />
+            </section>
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
+          </div>
         </div>
       </div>
     </React.Fragment>

@@ -373,7 +373,8 @@
           "displayName": "plasmic-antd5-collapse-item",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCollapse"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "sFqKXDN8rHnCDU91Y9JUYu",

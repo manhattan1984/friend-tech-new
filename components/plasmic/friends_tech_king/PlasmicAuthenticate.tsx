@@ -186,7 +186,7 @@ function PlasmicAuthenticate__RenderFunc(props: {
                         sty.button__xrrTb
                       )}
                       ghost={true}
-                      link={"/authenticate/#authenticate" as const}
+                      link={"/authenticate/#authenticate"}
                     >
                       {"Learn More"}
                     </Button>
@@ -209,13 +209,13 @@ function PlasmicAuthenticate__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__qk1PE)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/homewaitlistpng.png",
                       fullWidth: 577,
@@ -229,146 +229,128 @@ function PlasmicAuthenticate__RenderFunc(props: {
               </Hero>
             }
           >
-            {true ? (
-              <div
-                data-plasmic-name={"freeBox"}
-                data-plasmic-override={overrides.freeBox}
-                className={classNames(projectcss.all, sty.freeBox)}
-                id={"authenticate" as const}
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+              id={"authenticate"}
+            >
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__mjl1A
+                )}
+                reversed={
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? undefined
+                    : true
+                }
+                slot={
+                  "Discover how to secure your digital assets through our step-by-step wallet authentication process.\n\nFriendtech has moved beyond just providing end to end security encryption but has also employed several strategies and tools that help resolve gas fees, wrong transaction, fix bugs and even protect every user\u2019s experience on the web3 interface"
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__xNAoa)}
+                    color={"blue"}
+                  >
+                    {"Get Started"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___20TYh)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
               >
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__mjl1A
-                  )}
-                  reversed={
-                    hasVariant(globalVariants, "screen", "desktopOnly")
-                      ? undefined
-                      : true
-                  }
-                  slot={
-                    "Discover how to secure your digital assets through our step-by-step wallet authentication process.\n\nFriendtech has moved beyond just providing end to end security encryption but has also employed several strategies and tools that help resolve gas fees, wrong transaction, fix bugs and even protect every user\u2019s experience on the web3 interface"
-                  }
-                  slot2={
-                    true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__xNAoa
-                        )}
-                        color={"blue" as const}
-                      >
-                        {"Get Started"}
-                      </Button>
-                    ) : null
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___20TYh)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Wallet Authentication Process"}
-                </BenefitSection>
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__qGYzR
-                  )}
-                  slot={
-                    "Explore the robust security features and benefits of wallet authentication within Friend Tech."
-                  }
-                  slot2={
-                    true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__c2Qdg
-                        )}
-                        color={"blue" as const}
-                      >
-                        {"Get Started"}
-                      </Button>
-                    ) : null
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__rRjrv)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Security Features"}
-                </BenefitSection>
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__eQar3
-                  )}
-                  reversed={
-                    hasVariant(globalVariants, "screen", "desktopOnly")
-                      ? undefined
-                      : true
-                  }
-                  slot={
-                    "Ensure the utmost security for your digital assets\u2014authenticate your wallet today."
-                  }
-                  slot2={
-                    <ConnectButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.connectButton__shKgy
-                      )}
-                    />
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__wLlns)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/friends_tech_king/images/abstractVectorColorfulMeshDarkBackgroundFuturisticStyleCardElegantBackgroundBusinessPresentationsCorruptedPointSphereChaosAesthetics12174607RemovebgPreviewpng.png",
-                          fullWidth: 522,
-                          fullHeight: 478,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Authenticate"}
-                </BenefitSection>
-              </div>
-            ) : null}
+                {"Wallet Authentication Process"}
+              </BenefitSection>
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__qGYzR
+                )}
+                slot={
+                  "Explore the robust security features and benefits of wallet authentication within Friend Tech."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__c2Qdg)}
+                    color={"blue"}
+                  >
+                    {"Get Started"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__rRjrv)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
+              >
+                {"Security Features"}
+              </BenefitSection>
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__eQar3
+                )}
+                reversed={
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? undefined
+                    : true
+                }
+                slot={
+                  "Ensure the utmost security for your digital assets\u2014authenticate your wallet today."
+                }
+                slot2={
+                  <ConnectButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.connectButton__shKgy
+                    )}
+                  />
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__wLlns)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/abstractVectorColorfulMeshDarkBackgroundFuturisticStyleCardElegantBackgroundBusinessPresentationsCorruptedPointSphereChaosAesthetics12174607RemovebgPreviewpng.png",
+                      fullWidth: 522,
+                      fullHeight: 478,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+              >
+                {"Authenticate"}
+              </BenefitSection>
+            </div>
           </PageSection>
           <ConnectWallet
             data-plasmic-name={"connectWallet"}

@@ -134,68 +134,66 @@ function PlasmicPageSection__RenderFunc(props: {
         sty.root
       )}
     >
-      {true ? (
-        <div
-          data-plasmic-name={"freeBox"}
-          data-plasmic-override={overrides.freeBox}
-          className={classNames(projectcss.all, sty.freeBox)}
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      >
+        <Navbar
+          data-plasmic-name={"navbar"}
+          data-plasmic-override={overrides.navbar}
+          className={classNames("__wab_instance", sty.navbar)}
+        />
+
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <Hero
+              className={classNames("__wab_instance", sty.hero___4K)}
+              heroHeading2={
+                <React.Fragment>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lIsq
+                    )}
+                  >
+                    {"Welcome to Friend.Tech"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__km7Lu
+                    )}
+                  >
+                    {
+                      "Unlock Premium Benefits as a Friend Tech Whitelist Member"
+                    }
+                  </div>
+                </React.Fragment>
+              }
+            />
+          ),
+
+          value: args.slot
+        })}
+        <section
+          data-plasmic-name={"section"}
+          data-plasmic-override={overrides.section}
+          className={classNames(projectcss.all, sty.section)}
         >
-          <Navbar
-            data-plasmic-name={"navbar"}
-            data-plasmic-override={overrides.navbar}
-            className={classNames("__wab_instance", sty.navbar)}
-          />
-
           {p.renderPlasmicSlot({
-            defaultContents: (
-              <Hero
-                className={classNames("__wab_instance", sty.hero___4K)}
-                heroHeading2={
-                  <React.Fragment>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lIsq
-                      )}
-                    >
-                      {"Welcome to Friend.Tech"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__km7Lu
-                      )}
-                    >
-                      {
-                        "Unlock Premium Benefits as a Friend Tech Whitelist Member"
-                      }
-                    </div>
-                  </React.Fragment>
-                }
-              />
-            ),
-
-            value: args.slot
+            defaultContents: null,
+            value: args.children
           })}
-          <section
-            data-plasmic-name={"section"}
-            data-plasmic-override={overrides.section}
-            className={classNames(projectcss.all, sty.section)}
-          >
-            {p.renderPlasmicSlot({
-              defaultContents: null,
-              value: args.children
-            })}
-          </section>
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
-        </div>
-      ) : null}
+        </section>
+        <Footer
+          data-plasmic-name={"footer"}
+          data-plasmic-override={overrides.footer}
+          className={classNames("__wab_instance", sty.footer)}
+        />
+      </div>
     </div>
   ) as React.ReactElement | null;
 }

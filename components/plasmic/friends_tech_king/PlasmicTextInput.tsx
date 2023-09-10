@@ -156,7 +156,7 @@ function PlasmicTextInput__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          placeholder: "Enter something…" as const
+          placeholder: "Enter something…"
         },
         props.args
       ),
@@ -260,54 +260,52 @@ function PlasmicTextInput__RenderFunc(props: {
       )}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
     >
-      {(hasVariant($state, "showStartIcon", "showStartIcon") ? true : true) ? (
-        <div
-          data-plasmic-name={"startIconContainer"}
-          data-plasmic-override={overrides.startIconContainer}
-          className={classNames(projectcss.all, sty.startIconContainer, {
-            [sty.startIconContainer___focusVisibleWithin]:
-              triggers.focusVisibleWithin_root,
-            [sty.startIconContainercolor_dark]: hasVariant(
+      <div
+        data-plasmic-name={"startIconContainer"}
+        data-plasmic-override={overrides.startIconContainer}
+        className={classNames(projectcss.all, sty.startIconContainer, {
+          [sty.startIconContainer___focusVisibleWithin]:
+            triggers.focusVisibleWithin_root,
+          [sty.startIconContainercolor_dark]: hasVariant(
+            $state,
+            "color",
+            "dark"
+          ),
+          [sty.startIconContainerisDisabled]: hasVariant(
+            $state,
+            "isDisabled",
+            "isDisabled"
+          ),
+          [sty.startIconContainershowStartIcon]: hasVariant(
+            $state,
+            "showStartIcon",
+            "showStartIcon"
+          )
+        })}
+      >
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <SearchsvgIcon
+              className={classNames(projectcss.all, sty.svg__uvM1U)}
+              role={"img"}
+            />
+          ),
+
+          value: args.startIcon,
+          className: classNames(sty.slotTargetStartIcon, {
+            [sty.slotTargetStartIconcolor_dark]: hasVariant(
               $state,
               "color",
               "dark"
             ),
-            [sty.startIconContainerisDisabled]: hasVariant(
-              $state,
-              "isDisabled",
-              "isDisabled"
-            ),
-            [sty.startIconContainershowStartIcon]: hasVariant(
+            [sty.slotTargetStartIconshowStartIcon]: hasVariant(
               $state,
               "showStartIcon",
               "showStartIcon"
             )
-          })}
-        >
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <SearchsvgIcon
-                className={classNames(projectcss.all, sty.svg__uvM1U)}
-                role={"img"}
-              />
-            ),
-
-            value: args.startIcon,
-            className: classNames(sty.slotTargetStartIcon, {
-              [sty.slotTargetStartIconcolor_dark]: hasVariant(
-                $state,
-                "color",
-                "dark"
-              ),
-              [sty.slotTargetStartIconshowStartIcon]: hasVariant(
-                $state,
-                "showStartIcon",
-                "showStartIcon"
-              )
-            })
-          })}
-        </div>
-      ) : null}
+          })
+        })}
+      </div>
       <input
         data-plasmic-name={"input"}
         data-plasmic-override={overrides.input}
@@ -341,47 +339,41 @@ function PlasmicTextInput__RenderFunc(props: {
         value={p.generateStateValueProp($state, ["input", "value"]) ?? ""}
       />
 
-      {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : true) ? (
-        <div
-          data-plasmic-name={"endIconContainer"}
-          data-plasmic-override={overrides.endIconContainer}
-          className={classNames(projectcss.all, sty.endIconContainer, {
-            [sty.endIconContainercolor_dark]: hasVariant(
+      <div
+        data-plasmic-name={"endIconContainer"}
+        data-plasmic-override={overrides.endIconContainer}
+        className={classNames(projectcss.all, sty.endIconContainer, {
+          [sty.endIconContainercolor_dark]: hasVariant($state, "color", "dark"),
+          [sty.endIconContainershowEndIcon]: hasVariant(
+            $state,
+            "showEndIcon",
+            "showEndIcon"
+          )
+        })}
+      >
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <ChecksvgIcon
+              className={classNames(projectcss.all, sty.svg__xdG5R)}
+              role={"img"}
+            />
+          ),
+
+          value: args.endIcon,
+          className: classNames(sty.slotTargetEndIcon, {
+            [sty.slotTargetEndIconcolor_dark]: hasVariant(
               $state,
               "color",
               "dark"
             ),
-            [sty.endIconContainershowEndIcon]: hasVariant(
+            [sty.slotTargetEndIconshowEndIcon]: hasVariant(
               $state,
               "showEndIcon",
               "showEndIcon"
             )
-          })}
-        >
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__xdG5R)}
-                role={"img"}
-              />
-            ),
-
-            value: args.endIcon,
-            className: classNames(sty.slotTargetEndIcon, {
-              [sty.slotTargetEndIconcolor_dark]: hasVariant(
-                $state,
-                "color",
-                "dark"
-              ),
-              [sty.slotTargetEndIconshowEndIcon]: hasVariant(
-                $state,
-                "showEndIcon",
-                "showEndIcon"
-              )
-            })
-          })}
-        </div>
-      ) : null}
+          })
+        })}
+      </div>
     </div>
   ) as React.ReactElement | null;
 }

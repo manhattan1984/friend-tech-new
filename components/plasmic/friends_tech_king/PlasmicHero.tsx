@@ -231,7 +231,7 @@ function PlasmicHero__RenderFunc(props: {
                 <React.Fragment>
                   <Button
                     className={classNames("__wab_instance", sty.button___8DX51)}
-                    color={"blue" as const}
+                    color={"blue"}
                     onClick={async event => {
                       const $steps = {};
                       $steps["updateConnectWallet"] = true
@@ -330,13 +330,13 @@ function PlasmicHero__RenderFunc(props: {
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__zJAsM)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
                 src={{
                   src: "/plasmic/friends_tech_king/images/homeHeropng.png",
                   fullWidth: 577,

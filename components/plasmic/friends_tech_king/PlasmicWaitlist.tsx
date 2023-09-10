@@ -182,7 +182,7 @@ function PlasmicWaitlist__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__wCzYw)}
                     ghost={true}
-                    link={"/waitlist/#about-waitlist" as const}
+                    link={"/waitlist/#about-waitlist"}
                   >
                     {"Learn More"}
                   </Button>
@@ -205,13 +205,13 @@ function PlasmicWaitlist__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___8TGz3)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
                   src={{
                     src: "/plasmic/friends_tech_king/images/waitlistpng.png",
                     fullWidth: 577,
@@ -223,18 +223,16 @@ function PlasmicWaitlist__RenderFunc(props: {
             >
               {"Join Our Waitlist for Exclusive Updates and Early Access."}
             </Hero>
-            {true ? (
-              <div
-                className={classNames(projectcss.all, sty.freeBox__c36Rh)}
-                id={"about-waitlist" as const}
-              >
-                <PageBenefit
-                  data-plasmic-name={"pageBenefit"}
-                  data-plasmic-override={overrides.pageBenefit}
-                  className={classNames("__wab_instance", sty.pageBenefit)}
-                />
-              </div>
-            ) : null}
+            <div
+              className={classNames(projectcss.all, sty.freeBox__c36Rh)}
+              id={"about-waitlist"}
+            >
+              <PageBenefit
+                data-plasmic-name={"pageBenefit"}
+                data-plasmic-override={overrides.pageBenefit}
+                className={classNames("__wab_instance", sty.pageBenefit)}
+              />
+            </div>
             <BenefitSection
               alternate={true}
               className={classNames(
@@ -255,20 +253,18 @@ function PlasmicWaitlist__RenderFunc(props: {
                 </ConnectButton>
               }
               slot3={
-                true ? (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__neKjA)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={"https://placehold.co/600x400" as const}
-                  />
-                ) : null
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__neKjA)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={"https://placehold.co/600x400"}
+                />
               }
             >
               {"Join Waitlist Form"}
@@ -282,30 +278,26 @@ function PlasmicWaitlist__RenderFunc(props: {
                 "Help us grow our community by sharing the waitlist with friends and colleagues."
               }
               slot2={
-                true ? (
-                  <Button
-                    className={classNames("__wab_instance", sty.button__yykmi)}
-                    color={"blue" as const}
-                  >
-                    {"Get Whitelisted"}
-                  </Button>
-                ) : null
+                <Button
+                  className={classNames("__wab_instance", sty.button__yykmi)}
+                  color={"blue"}
+                >
+                  {"Get Whitelisted"}
+                </Button>
               }
               slot3={
-                true ? (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__s7Vd)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={"https://placehold.co/600x400" as const}
-                  />
-                ) : null
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__s7Vd)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={"https://placehold.co/600x400"}
+                />
               }
             >
               {"Share"}

@@ -396,55 +396,53 @@ function PlasmicFooter__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.column4)}
           >
-            {true ? (
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"content3"}
+              data-plasmic-override={overrides.content3}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.content3)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__q0B8
+                )}
+              >
+                {"Address"}
+              </div>
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"content3"}
-                data-plasmic-override={overrides.content3}
+                data-plasmic-name={"footerLinks3"}
+                data-plasmic-override={overrides.footerLinks3}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.content3)}
+                className={classNames(projectcss.all, sty.footerLinks3)}
               >
                 <div
+                  data-plasmic-name={"link8"}
+                  data-plasmic-override={overrides.link8}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__q0B8
+                    sty.link8
                   )}
                 >
-                  {"Address"}
+                  {"15 Railway Street \nAntrim BT41 4AE UK"}
                 </div>
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"footerLinks3"}
-                  data-plasmic-override={overrides.footerLinks3}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.footerLinks3)}
+                <div
+                  data-plasmic-name={"link9"}
+                  data-plasmic-override={overrides.link9}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.link9
+                  )}
                 >
-                  <div
-                    data-plasmic-name={"link8"}
-                    data-plasmic-override={overrides.link8}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.link8
-                    )}
-                  >
-                    {"15 Railway Street \nAntrim BT41 4AE UK"}
-                  </div>
-                  <div
-                    data-plasmic-name={"link9"}
-                    data-plasmic-override={overrides.link9}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.link9
-                    )}
-                  >
-                    {"Monday To Sunday\n12:00 - 9:00 pm"}
-                  </div>
-                </p.Stack>
+                  {"Monday To Sunday\n12:00 - 9:00 pm"}
+                </div>
               </p.Stack>
-            ) : null}
+            </p.Stack>
           </p.Stack>
         </p.Stack>
       </p.Stack>
@@ -474,7 +472,7 @@ function PlasmicFooter__RenderFunc(props: {
                 sty.link__mMnp
               )}
               component={Link}
-              href={"https://twitter.com/friendtech" as const}
+              href={"https://twitter.com/friendtech"}
               platform={"nextjs"}
             >
               <Icon19Icon

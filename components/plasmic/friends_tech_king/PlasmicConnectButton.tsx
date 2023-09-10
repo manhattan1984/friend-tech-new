@@ -59,7 +59,7 @@ export const PlasmicConnectButton__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicConnectButton__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<"a"> & Partial<LinkProps>;
   freeBox?: p.Flex<"div">;
 };
 
@@ -106,21 +106,24 @@ function PlasmicConnectButton__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   return (
-    <div
+    <p.PlasmicLink
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root,
-        "interact-button" as const
+        "interact-button"
       )}
+      component={Link}
+      platform={"nextjs"}
     >
       <div
         data-plasmic-name={"freeBox"}
@@ -133,7 +136,7 @@ function PlasmicConnectButton__RenderFunc(props: {
           className: classNames(sty.slotTargetChildren)
         })}
       </div>
-    </div>
+    </p.PlasmicLink>
   ) as React.ReactElement | null;
 }
 
@@ -145,7 +148,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: "a";
   freeBox: "div";
 };
 

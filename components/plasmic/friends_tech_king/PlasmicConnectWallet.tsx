@@ -164,124 +164,112 @@ function PlasmicConnectWallet__RenderFunc(props: {
         sty.root
       )}
     >
-      {true ? (
-        <AntdModal
-          data-plasmic-name={"modal"}
-          data-plasmic-override={overrides.modal}
-          className={classNames("__wab_instance", sty.modal)}
-          defaultStylesClassName={classNames(
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens
-          )}
-          modalScopeClassName={sty["modal__modal"]}
-          onOpenChange={p.generateStateOnChangeProp($state, ["modal", "open"])}
-          open={p.generateStateValueProp($state, ["modal", "open"])}
-          title={
-            <h4
-              data-plasmic-name={"h4"}
-              data-plasmic-override={overrides.h4}
-              className={classNames(
-                projectcss.all,
-                projectcss.h4,
-                projectcss.__wab_text,
-                sty.h4
-              )}
-            >
-              {"Connect your wallet"}
-            </h4>
-          }
-        >
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__db9Qw)}>
-              <div className={classNames(projectcss.all, sty.freeBox__uQfUc)}>
-                <Wallet
-                  className={classNames("__wab_instance", sty.wallet__sYDfB)}
-                />
+      <AntdModal
+        data-plasmic-name={"modal"}
+        data-plasmic-override={overrides.modal}
+        className={classNames("__wab_instance", sty.modal)}
+        defaultStylesClassName={classNames(
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          projectcss.plasmic_tokens,
+          plasmic_antd_5_hostless_css.plasmic_tokens
+        )}
+        modalScopeClassName={sty["modal__modal"]}
+        onOpenChange={p.generateStateOnChangeProp($state, ["modal", "open"])}
+        open={p.generateStateValueProp($state, ["modal", "open"])}
+        title={
+          <h4
+            data-plasmic-name={"h4"}
+            data-plasmic-override={overrides.h4}
+            className={classNames(
+              projectcss.all,
+              projectcss.h4,
+              projectcss.__wab_text,
+              sty.h4
+            )}
+          >
+            {"Connect your wallet"}
+          </h4>
+        }
+      >
+        <div className={classNames(projectcss.all, sty.freeBox__db9Qw)}>
+          <div className={classNames(projectcss.all, sty.freeBox__uQfUc)}>
+            <Wallet
+              className={classNames("__wab_instance", sty.wallet__sYDfB)}
+            />
 
-                <Wallet
-                  className={classNames("__wab_instance", sty.wallet__glsXr)}
-                  slot={"Coinbase"}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___42JuL)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={
-                      "https://choronholdings.org/images/coinbase.svg" as const
-                    }
-                  />
-                </Wallet>
-                <Wallet
-                  className={classNames("__wab_instance", sty.wallet__x8UbY)}
-                  slot={"Trust Wallet"}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__bqnVt)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={
-                      "https://choronholdings.org/images/trust-wallet.svg" as const
-                    }
-                  />
-                </Wallet>
-                <Wallet
-                  className={classNames("__wab_instance", sty.wallet__tiKs3)}
-                  slot={"Binance Wallet"}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__gpNoc)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={
-                      "https://choronholdings.org/images/binance.svg" as const
-                    }
-                  />
-                </Wallet>
-                <Wallet
-                  className={classNames("__wab_instance", sty.wallet__niHk7)}
-                  slot={"WalletConnect"}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__pba8S)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={
-                      "https://choronholdings.org/images/wallet-connect.svg" as const
-                    }
-                  />
-                </Wallet>
-              </div>
-            </div>
-          ) : null}
-        </AntdModal>
-      ) : null}
+            <Wallet
+              className={classNames("__wab_instance", sty.wallet__glsXr)}
+              slot={"Coinbase"}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___42JuL)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={"https://choronholdings.org/images/coinbase.svg"}
+              />
+            </Wallet>
+            <Wallet
+              className={classNames("__wab_instance", sty.wallet__x8UbY)}
+              slot={"Trust Wallet"}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__bqnVt)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={"https://choronholdings.org/images/trust-wallet.svg"}
+              />
+            </Wallet>
+            <Wallet
+              className={classNames("__wab_instance", sty.wallet__tiKs3)}
+              slot={"Binance Wallet"}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__gpNoc)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={"https://choronholdings.org/images/binance.svg"}
+              />
+            </Wallet>
+            <Wallet
+              className={classNames("__wab_instance", sty.wallet__niHk7)}
+              slot={"WalletConnect"}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__pba8S)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={"https://choronholdings.org/images/wallet-connect.svg"}
+              />
+            </Wallet>
+          </div>
+        </div>
+      </AntdModal>
     </div>
   ) as React.ReactElement | null;
 }

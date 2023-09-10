@@ -211,7 +211,7 @@ function PlasmicBenefitSection__RenderFunc(props: {
           defaultContents: (
             <Button
               className={classNames("__wab_instance", sty.button__cInYc)}
-              color={"blue" as const}
+              color={"blue"}
             >
               {"Get Whitelisted"}
             </Button>
@@ -231,13 +231,13 @@ function PlasmicBenefitSection__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__pTx3T)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
               src={{
                 src: "/plasmic/friends_tech_king/images/whitelistpng.png",
                 fullWidth: 576,

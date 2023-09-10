@@ -190,7 +190,7 @@ function PlasmicHome__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__ofS0O)}
                     ghost={true}
-                    link={"/#whitelist" as const}
+                    link={"/#whitelist"}
                   >
                     {"Learn More"}
                   </Button>
@@ -220,405 +220,374 @@ function PlasmicHome__RenderFunc(props: {
               }
             />
 
-            {true ? (
-              <div
-                data-plasmic-name={"whitelist"}
-                data-plasmic-override={overrides.whitelist}
-                className={classNames(projectcss.all, sty.whitelist)}
-                id={"whitelist" as const}
+            <div
+              data-plasmic-name={"whitelist"}
+              data-plasmic-override={overrides.whitelist}
+              className={classNames(projectcss.all, sty.whitelist)}
+              id={"whitelist"}
+            >
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__hGy5S
+                )}
+                reversed={
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? true
+                    : undefined
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__lghmW)}
+                    color={"blue"}
+                    link={`/whitelist`}
+                  >
+                    {"Get Whitelisted"}
+                  </Button>
+                }
+              />
+            </div>
+            <div
+              data-plasmic-name={"waitlist"}
+              data-plasmic-override={overrides.waitlist}
+              className={classNames(projectcss.all, sty.waitlist)}
+              id={"waitlist"}
+            >
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection___4IVsi
+                )}
+                slot={
+                  "Be the first to access cutting-edge financial solutions and technology updates.  Join our waitlist to receive exclusive news and opportunities."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button___04LbX)}
+                    color={"blue"}
+                    link={`/waitlist`}
+                  >
+                    {"Join Now"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__dhZvd)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/waitlistpng.png",
+                      fullWidth: 577,
+                      fullHeight: 1152,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__hGy5S
-                  )}
-                  reversed={
-                    hasVariant(globalVariants, "screen", "desktopOnly")
-                      ? true
-                      : undefined
-                  }
-                  slot2={
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__lghmW
-                      )}
-                      color={"blue" as const}
-                      link={`/whitelist`}
-                    >
-                      {"Get Whitelisted"}
-                    </Button>
-                  }
-                />
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"waitlist"}
-                data-plasmic-override={overrides.waitlist}
-                className={classNames(projectcss.all, sty.waitlist)}
-                id={"waitlist" as const}
+                {"Join the Waitlist for Exclusive Updates"}
+              </BenefitSection>
+            </div>
+            <div
+              data-plasmic-name={"loan"}
+              data-plasmic-override={overrides.loan}
+              className={classNames(projectcss.all, sty.loan)}
+              id={"loan"}
+            >
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__nb2U
+                )}
+                reversed={
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? true
+                    : undefined
+                }
+                slot={
+                  "Friend Tech offers secure, hassle-free cryptocurrency loans tailored to your needs. Take advantage of our competitive interest rates and flexible terms to grow your wealth."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button___3XBim)}
+                    color={"blue"}
+                    link={`/loan`}
+                  >
+                    {"Explore Loan Options"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__lH5Bf)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/loanpng.png",
+                      fullWidth: 576,
+                      fullHeight: 1152,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection___4IVsi
-                  )}
-                  slot={
-                    "Be the first to access cutting-edge financial solutions and technology updates.  Join our waitlist to receive exclusive news and opportunities."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button___04LbX
-                      )}
-                      color={"blue" as const}
-                      link={`/waitlist`}
-                    >
-                      {"Join Now"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__dhZvd)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/waitlistpng.png",
-                        fullWidth: 577,
-                        fullHeight: 1152,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Join the Waitlist for Exclusive Updates"}
-                </BenefitSection>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"loan"}
-                data-plasmic-override={overrides.loan}
-                className={classNames(projectcss.all, sty.loan)}
-                id={"loan" as const}
+                {"Secure Loans for Your Financial Goals"}
+              </BenefitSection>
+            </div>
+            <div
+              data-plasmic-name={"community"}
+              data-plasmic-override={overrides.community}
+              className={classNames(projectcss.all, sty.community)}
+              id={"community"}
+            >
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__e6Es2
+                )}
+                slot={
+                  "Join a vibrant network of tech enthusiasts and finance experts. Share insights, stay updated on industry trends, and collaborate with like-minded individuals."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__nNmZ)}
+                    color={"blue"}
+                    link={`/community`}
+                  >
+                    {"Join The Community"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__dFlP3)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/communitypng.png",
+                      fullWidth: 577,
+                      fullHeight: 1152,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__nb2U
-                  )}
-                  reversed={
-                    hasVariant(globalVariants, "screen", "desktopOnly")
-                      ? true
-                      : undefined
-                  }
-                  slot={
-                    "Friend Tech offers secure, hassle-free cryptocurrency loans tailored to your needs. Take advantage of our competitive interest rates and flexible terms to grow your wealth."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button___3XBim
-                      )}
-                      color={"blue" as const}
-                      link={`/loan`}
-                    >
-                      {"Explore Loan Options"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__lH5Bf)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/loanpng.png",
-                        fullWidth: 576,
-                        fullHeight: 1152,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Secure Loans for Your Financial Goals"}
-                </BenefitSection>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"community"}
-                data-plasmic-override={overrides.community}
-                className={classNames(projectcss.all, sty.community)}
-                id={"community" as const}
+                {"Connect with Our Thriving Community"}
+              </BenefitSection>
+            </div>
+            <div
+              data-plasmic-name={"airdrop"}
+              data-plasmic-override={overrides.airdrop}
+              className={classNames(projectcss.all, sty.airdrop)}
+              id={"airdrop"}
+            >
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection___0R61P
+                )}
+                reversed={
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? true
+                    : undefined
+                }
+                slot={
+                  "Participate in our token airdrops and get rewarded for your support. Claim your airdrop tokens effortlessly with Friend Tech."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__eNzM)}
+                    color={"blue"}
+                    link={`/airdrop`}
+                  >
+                    {"Claim Your Airdrop"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__qawyj)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/homeAirdroppng.png",
+                      fullWidth: 576,
+                      fullHeight: 1152,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__e6Es2
-                  )}
-                  slot={
-                    "Join a vibrant network of tech enthusiasts and finance experts. Share insights, stay updated on industry trends, and collaborate with like-minded individuals."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames("__wab_instance", sty.button__nNmZ)}
-                      color={"blue" as const}
-                      link={`/community`}
-                    >
-                      {"Join The Community"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__dFlP3)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/communitypng.png",
-                        fullWidth: 577,
-                        fullHeight: 1152,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Connect with Our Thriving Community"}
-                </BenefitSection>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"airdrop"}
-                data-plasmic-override={overrides.airdrop}
-                className={classNames(projectcss.all, sty.airdrop)}
-                id={"airdrop" as const}
+                {"Claim Your Token Airdrops"}
+              </BenefitSection>
+            </div>
+            <div
+              data-plasmic-name={"authentication"}
+              data-plasmic-override={overrides.authentication}
+              className={classNames(projectcss.all, sty.authentication)}
+              id={"authenticate"}
+            >
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__sUxlV
+                )}
+                slot={
+                  "Protect your assets with our cutting-edge wallet authentication system. Ensure the utmost security for your digital assets with Friend Tech."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__vji7)}
+                    color={"blue"}
+                    link={`/authenticate`}
+                  >
+                    {"Secure Your Wallet"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__byRiC)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/homewaitlistpng.png",
+                      fullWidth: 577,
+                      fullHeight: 1152,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection___0R61P
-                  )}
-                  reversed={
-                    hasVariant(globalVariants, "screen", "desktopOnly")
-                      ? true
-                      : undefined
-                  }
-                  slot={
-                    "Participate in our token airdrops and get rewarded for your support. Claim your airdrop tokens effortlessly with Friend Tech."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames("__wab_instance", sty.button__eNzM)}
-                      color={"blue" as const}
-                      link={`/airdrop`}
-                    >
-                      {"Claim Your Airdrop"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__qawyj)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/homeAirdroppng.png",
-                        fullWidth: 576,
-                        fullHeight: 1152,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Claim Your Token Airdrops"}
-                </BenefitSection>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"authentication"}
-                data-plasmic-override={overrides.authentication}
-                className={classNames(projectcss.all, sty.authentication)}
-                id={"authenticate" as const}
+                {"Enhanced Wallet Security"}
+              </BenefitSection>
+            </div>
+            <div
+              data-plasmic-name={"mint"}
+              data-plasmic-override={overrides.mint}
+              className={classNames(projectcss.all, sty.mint)}
+              id={"mint"}
+            >
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__rb961
+                )}
+                reversed={
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? true
+                    : undefined
+                }
+                slot={
+                  "Explore the exciting world of NFTs on Friend Tech's platform. Mint your digital creations and engage in the NFT marketplace to showcase your unique content."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__oluyh)}
+                    color={"blue"}
+                    link={`/mint`}
+                  >
+                    {"Start Minting NFTs"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__iosTh)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/mintpng.png",
+                      fullWidth: 576,
+                      fullHeight: 1152,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__sUxlV
-                  )}
-                  slot={
-                    "Protect your assets with our cutting-edge wallet authentication system. Ensure the utmost security for your digital assets with Friend Tech."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames("__wab_instance", sty.button__vji7)}
-                      color={"blue" as const}
-                      link={`/authenticate`}
-                    >
-                      {"Secure Your Wallet"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__byRiC)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/homewaitlistpng.png",
-                        fullWidth: 577,
-                        fullHeight: 1152,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Enhanced Wallet Security"}
-                </BenefitSection>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"mint"}
-                data-plasmic-override={overrides.mint}
-                className={classNames(projectcss.all, sty.mint)}
-                id={"mint" as const}
+                {"Create and Trade Unique NFTs"}
+              </BenefitSection>
+            </div>
+            <div
+              data-plasmic-name={"invest"}
+              data-plasmic-override={overrides.invest}
+              className={classNames(projectcss.all, sty.invest)}
+              id={"mint"}
+            >
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__uwOIi
+                )}
+                slot={
+                  "Invest with confidence. Explore our diverse investment options and grow your wealth securely with Friend Tech."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__eAmLz)}
+                    color={"blue"}
+                    link={`/investment`}
+                  >
+                    {"Start Investing"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ecYn)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/friends_tech_king/images/portfolioPhonepng2.png",
+                      fullWidth: 865,
+                      fullHeight: 1728,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__rb961
-                  )}
-                  reversed={
-                    hasVariant(globalVariants, "screen", "desktopOnly")
-                      ? true
-                      : undefined
-                  }
-                  slot={
-                    "Explore the exciting world of NFTs on Friend Tech's platform. Mint your digital creations and engage in the NFT marketplace to showcase your unique content."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__oluyh
-                      )}
-                      color={"blue" as const}
-                      link={`/mint`}
-                    >
-                      {"Start Minting NFTs"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__iosTh)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/mintpng.png",
-                        fullWidth: 576,
-                        fullHeight: 1152,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Create and Trade Unique NFTs"}
-                </BenefitSection>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"invest"}
-                data-plasmic-override={overrides.invest}
-                className={classNames(projectcss.all, sty.invest)}
-                id={"mint" as const}
-              >
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__uwOIi
-                  )}
-                  slot={
-                    "Invest with confidence. Explore our diverse investment options and grow your wealth securely with Friend Tech."
-                  }
-                  slot2={
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__eAmLz
-                      )}
-                      color={"blue" as const}
-                      link={`/investment`}
-                    >
-                      {"Start Investing"}
-                    </Button>
-                  }
-                  slot3={
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__ecYn)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/friends_tech_king/images/portfolioPhonepng2.png",
-                        fullWidth: 865,
-                        fullHeight: 1728,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  {"Invest with Confidence"}
-                </BenefitSection>
-              </div>
-            ) : null}
+                {"Invest with Confidence"}
+              </BenefitSection>
+            </div>
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}

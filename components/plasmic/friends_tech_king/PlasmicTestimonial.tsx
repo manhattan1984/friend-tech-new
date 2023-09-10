@@ -168,27 +168,25 @@ function PlasmicTestimonial__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.group12)}
         >
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__qqhZw)}>
-              {p.renderPlasmicSlot({
-                defaultContents: (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__ue58X)}
-                    displayHeight={"100%" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100%" as const}
-                    loading={"lazy" as const}
-                  />
-                ),
+          <div className={classNames(projectcss.all, sty.freeBox__qqhZw)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ue58X)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                />
+              ),
 
-                value: args.slot2
-              })}
-            </div>
-          ) : null}
+              value: args.slot2
+            })}
+          </div>
           <div
             data-plasmic-name={"group11"}
             data-plasmic-override={overrides.group11}

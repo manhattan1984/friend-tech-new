@@ -26,42 +26,42 @@ export default function GlobalContextsProvider(
       borderRadius={
         antdConfigProviderProps && "borderRadius" in antdConfigProviderProps
           ? antdConfigProviderProps.borderRadius!
-          : (6 as const)
+          : 6
       }
       colorBgBase={
         antdConfigProviderProps && "colorBgBase" in antdConfigProviderProps
           ? antdConfigProviderProps.colorBgBase!
-          : ("#ffffff" as const)
+          : "#ffffff"
       }
       colorError={
         antdConfigProviderProps && "colorError" in antdConfigProviderProps
           ? antdConfigProviderProps.colorError!
-          : ("#ff4d4f" as const)
+          : "#ff4d4f"
       }
       colorInfo={
         antdConfigProviderProps && "colorInfo" in antdConfigProviderProps
           ? antdConfigProviderProps.colorInfo!
-          : ("#1677ff" as const)
+          : "#1677ff"
       }
       colorPrimary={
         antdConfigProviderProps && "colorPrimary" in antdConfigProviderProps
           ? antdConfigProviderProps.colorPrimary!
-          : ("#1677ff" as const)
+          : "#1677ff"
       }
       colorSuccess={
         antdConfigProviderProps && "colorSuccess" in antdConfigProviderProps
           ? antdConfigProviderProps.colorSuccess!
-          : ("#52c41a" as const)
+          : "#52c41a"
       }
       colorWarning={
         antdConfigProviderProps && "colorWarning" in antdConfigProviderProps
           ? antdConfigProviderProps.colorWarning!
-          : ("#faad14" as const)
+          : "#faad14"
       }
       controlHeight={
         antdConfigProviderProps && "controlHeight" in antdConfigProviderProps
           ? antdConfigProviderProps.controlHeight!
-          : (32 as const)
+          : 32
       }
       defaultDark={
         antdConfigProviderProps && "defaultDark" in antdConfigProviderProps
@@ -71,7 +71,7 @@ export default function GlobalContextsProvider(
       lineWidth={
         antdConfigProviderProps && "lineWidth" in antdConfigProviderProps
           ? antdConfigProviderProps.lineWidth!
-          : (1 as const)
+          : 1
       }
       loadingText={
         antdConfigProviderProps && "loadingText" in antdConfigProviderProps
@@ -86,12 +86,12 @@ export default function GlobalContextsProvider(
       sizeStep={
         antdConfigProviderProps && "sizeStep" in antdConfigProviderProps
           ? antdConfigProviderProps.sizeStep!
-          : (4 as const)
+          : 4
       }
       sizeUnit={
         antdConfigProviderProps && "sizeUnit" in antdConfigProviderProps
           ? antdConfigProviderProps.sizeUnit!
-          : (4 as const)
+          : 4
       }
       themeStyles={
         antdConfigProviderProps && "themeStyles" in antdConfigProviderProps

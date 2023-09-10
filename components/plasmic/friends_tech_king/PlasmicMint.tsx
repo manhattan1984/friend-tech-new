@@ -185,7 +185,7 @@ function PlasmicMint__RenderFunc(props: {
                         sty.button__wGfRp
                       )}
                       ghost={true}
-                      link={"/mint/#about-mint" as const}
+                      link={"/mint/#about-mint"}
                     >
                       {"Learn More"}
                     </Button>
@@ -206,13 +206,13 @@ function PlasmicMint__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__ukjYh)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/mintpng.png",
                       fullWidth: 576,
@@ -228,7 +228,7 @@ function PlasmicMint__RenderFunc(props: {
           >
             <div
               className={classNames(projectcss.all, sty.freeBox__iXz9F)}
-              id={"about-mint" as const}
+              id={"about-mint"}
             >
               <BenefitSection
                 className={classNames(
@@ -240,33 +240,26 @@ function PlasmicMint__RenderFunc(props: {
                   "Learn how to create and mint your NFTs on the Friend Tech platform with our user-friendly guide."
                 }
                 slot2={
-                  true ? (
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__rgRmX
-                      )}
-                      color={"blue" as const}
-                    >
-                      {"Get Started"}
-                    </Button>
-                  ) : null
+                  <Button
+                    className={classNames("__wab_instance", sty.button__rgRmX)}
+                    color={"blue"}
+                  >
+                    {"Get Started"}
+                  </Button>
                 }
                 slot3={
-                  true ? (
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__aoHtt)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={"https://placehold.co/600x400" as const}
-                    />
-                  ) : null
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__aoHtt)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
                 }
               >
                 {"NFT Minting Process"}
@@ -281,33 +274,26 @@ function PlasmicMint__RenderFunc(props: {
                   "Discover our NFT marketplace, where you can buy, sell, and trade unique digital assets."
                 }
                 slot2={
-                  true ? (
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__uyxKx
-                      )}
-                      color={"blue" as const}
-                    >
-                      {"Get Started"}
-                    </Button>
-                  ) : null
+                  <Button
+                    className={classNames("__wab_instance", sty.button__uyxKx)}
+                    color={"blue"}
+                  >
+                    {"Get Started"}
+                  </Button>
                 }
                 slot3={
-                  true ? (
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__iaf2O)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={"https://placehold.co/600x400" as const}
-                    />
-                  ) : null
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__iaf2O)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
                 }
               >
                 {"NFT Marketplace"}
@@ -333,95 +319,93 @@ function PlasmicMint__RenderFunc(props: {
                     "Read inspiring stories of artists who have found success in the NFT space through Friend Tech."
                   }
                 </div>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__rMEt)}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__rMEt)}
+                >
+                  <Testimonial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonial__pXtak
+                    )}
+                    slot={"Nina Martinez"}
+                    slot2={
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__mi0RP)}
+                        displayHeight={"100%"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={
+                          "https://media.istockphoto.com/id/1139722168/photo/mid-adult-man-smiling-on-gray-background.webp?b=1&s=170667a&w=0&k=20&c=Hk4bTLaIWEOAvY6v768OlpPycRLXLgZiPTjrT-rjCSY="
+                        }
+                      />
+                    }
                   >
-                    <Testimonial
-                      className={classNames(
-                        "__wab_instance",
-                        sty.testimonial__pXtak
-                      )}
-                      slot={"Nina Martinez"}
-                      slot2={
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__mi0RP)}
-                          displayHeight={"100%" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://media.istockphoto.com/id/1139722168/photo/mid-adult-man-smiling-on-gray-background.webp?b=1&s=170667a&w=0&k=20&c=Hk4bTLaIWEOAvY6v768OlpPycRLXLgZiPTjrT-rjCSY=" as const
-                          }
-                        />
-                      }
-                    >
-                      {
-                        "Nina Martinez, an aspiring digital artist, began her NFT journey with Friend Tech. She minted her first NFT collection and was amazed by the response. Her unique digital artworks gained attention from art collectors worldwide, and her career took off. Today, Nina is a celebrated NFT artist, and her creations are in high demand."
-                      }
-                    </Testimonial>
-                    <Testimonial
-                      className={classNames(
-                        "__wab_instance",
-                        sty.testimonial__pUayf
-                      )}
-                      slot={"Max Thompson"}
-                      slot2={
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img___8A45T)}
-                          displayHeight={"100%" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://media.istockphoto.com/id/183803927/photo/male-portrait.webp?b=1&s=170667a&w=0&k=20&c=H4X5e5rFTs_D5m0-Md7Ap6vDgmE2MFuj3MS7E_0P02U=" as const
-                          }
-                        />
-                      }
-                    >
-                      {
-                        "Max Thompson, a talented illustrator, used Friend Tech to mint his first NFTs. His creative and imaginative artworks found a passionate audience within the NFT community. With the support of Friend Tech's platform, Max's art gained recognition, and he has since collaborated with renowned artists and galleries."
-                      }
-                    </Testimonial>
-                    <Testimonial
-                      className={classNames(
-                        "__wab_instance",
-                        sty.testimonial__fcgdn
-                      )}
-                      slot={"Emily Clark"}
-                      slot2={
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__le1R)}
-                          displayHeight={"100%" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://media.istockphoto.com/id/1196391449/photo/portrait-of-african-woman.webp?b=1&s=170667a&w=0&k=20&c=cZxhkMwXqOaI1w2Wpq5XC53Jgni5LFIMVhDSDkhvMhA=" as const
-                          }
-                        />
-                      }
-                    >
-                      {
-                        "Emily Clark, a visionary digital artist, started building her NFT portfolio with Friend Tech. Her NFTs quickly gained popularity, and her unique style captivated collectors. Emily's journey transformed her into a sought-after NFT artist, and her work is showcased in galleries and exhibitions globally."
-                      }
-                    </Testimonial>
-                  </p.Stack>
-                ) : null}
+                    {
+                      "Nina Martinez, an aspiring digital artist, began her NFT journey with Friend Tech. She minted her first NFT collection and was amazed by the response. Her unique digital artworks gained attention from art collectors worldwide, and her career took off. Today, Nina is a celebrated NFT artist, and her creations are in high demand."
+                    }
+                  </Testimonial>
+                  <Testimonial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonial__pUayf
+                    )}
+                    slot={"Max Thompson"}
+                    slot2={
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img___8A45T)}
+                        displayHeight={"100%"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={
+                          "https://media.istockphoto.com/id/183803927/photo/male-portrait.webp?b=1&s=170667a&w=0&k=20&c=H4X5e5rFTs_D5m0-Md7Ap6vDgmE2MFuj3MS7E_0P02U="
+                        }
+                      />
+                    }
+                  >
+                    {
+                      "Max Thompson, a talented illustrator, used Friend Tech to mint his first NFTs. His creative and imaginative artworks found a passionate audience within the NFT community. With the support of Friend Tech's platform, Max's art gained recognition, and he has since collaborated with renowned artists and galleries."
+                    }
+                  </Testimonial>
+                  <Testimonial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonial__fcgdn
+                    )}
+                    slot={"Emily Clark"}
+                    slot2={
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__le1R)}
+                        displayHeight={"100%"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={
+                          "https://media.istockphoto.com/id/1196391449/photo/portrait-of-african-woman.webp?b=1&s=170667a&w=0&k=20&c=cZxhkMwXqOaI1w2Wpq5XC53Jgni5LFIMVhDSDkhvMhA="
+                        }
+                      />
+                    }
+                  >
+                    {
+                      "Emily Clark, a visionary digital artist, started building her NFT portfolio with Friend Tech. Her NFTs quickly gained popularity, and her unique style captivated collectors. Emily's journey transformed her into a sought-after NFT artist, and her work is showcased in galleries and exhibitions globally."
+                    }
+                  </Testimonial>
+                </p.Stack>
               </div>
               <BenefitSection
                 alternate={true}
@@ -446,20 +430,18 @@ function PlasmicMint__RenderFunc(props: {
                   />
                 }
                 slot3={
-                  true ? (
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__o2Gcm)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={"https://placehold.co/600x400" as const}
-                    />
-                  ) : null
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__o2Gcm)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
                 }
               >
                 {"Start Minting"}

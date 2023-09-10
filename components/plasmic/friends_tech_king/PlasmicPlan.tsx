@@ -152,141 +152,127 @@ function PlasmicPlan__RenderFunc(props: {
           className: classNames(sty.slotTargetChildren)
         })}
       </div>
-      {true ? (
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__ffEnb)}
-        >
-          <div className={classNames(projectcss.all, sty.freeBox__xGxC2)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__is8On
-              )}
-            >
-              {"Minimum"}
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__l6RAf)}>
-              {p.renderPlasmicSlot({
-                defaultContents: "$500",
-                value: args.slot3,
-                className: classNames(sty.slotTargetSlot3)
-              })}
-            </div>
+      <p.Stack
+        as={"div"}
+        hasGap={true}
+        className={classNames(projectcss.all, sty.freeBox__ffEnb)}
+      >
+        <div className={classNames(projectcss.all, sty.freeBox__xGxC2)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__is8On
+            )}
+          >
+            {"Minimum"}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__sup2R)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__oDk6S
-              )}
-            >
-              {"Maximum"}
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__yKol)}>
-              {p.renderPlasmicSlot({
-                defaultContents: "$500",
-                value: args.slot6,
-                className: classNames(sty.slotTargetSlot6)
-              })}
-            </div>
+          <div className={classNames(projectcss.all, sty.freeBox__l6RAf)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "$500",
+              value: args.slot3,
+              className: classNames(sty.slotTargetSlot3)
+            })}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__nTNu)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__e9Chd
-              )}
-            >
-              {"Daily Income"}
-            </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__o86K2)}>
-                <div className={classNames(projectcss.all, sty.freeBox__vwtNw)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__cTIr0)}
-                  >
-                    {p.renderPlasmicSlot({
-                      defaultContents: "10%",
-                      value: args.slot2,
-                      className: classNames(sty.slotTargetSlot2)
-                    })}
-                  </div>
-                </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__sup2R)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__oDk6S
+            )}
+          >
+            {"Maximum"}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__yKol)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "$500",
+              value: args.slot6,
+              className: classNames(sty.slotTargetSlot6)
+            })}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__nTNu)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__e9Chd
+            )}
+          >
+            {"Daily Income"}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__o86K2)}>
+            <div className={classNames(projectcss.all, sty.freeBox__vwtNw)}>
+              <div className={classNames(projectcss.all, sty.freeBox__cTIr0)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: "10%",
+                  value: args.slot2,
+                  className: classNames(sty.slotTargetSlot2)
+                })}
               </div>
-            ) : null}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox___5YhAg)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___23TpA
-              )}
-            >
-              {"Lifespan"}
             </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__v6UYp)}>
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox___5YhAg)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___23TpA
+            )}
+          >
+            {"Lifespan"}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__v6UYp)}>
+            <div className={classNames(projectcss.all, sty.freeBox___97LEg)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__aRQnA)}
+              >
+                {p.renderPlasmicSlot({
+                  defaultContents: "5%",
+                  value: args.slot7,
+                  className: classNames(sty.slotTargetSlot7)
+                })}
                 <div
-                  className={classNames(projectcss.all, sty.freeBox___97LEg)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ixVyx
+                  )}
                 >
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__aRQnA)}
-                  >
-                    {p.renderPlasmicSlot({
-                      defaultContents: "5%",
-                      value: args.slot7,
-                      className: classNames(sty.slotTargetSlot7)
-                    })}
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ixVyx
-                      )}
-                    >
-                      {"days"}
-                    </div>
-                  </p.Stack>
+                  {"days"}
                 </div>
-              </div>
-            ) : null}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__unRbz)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__t27NZ
-              )}
-            >
-              {"Referral Bonus"}
+              </p.Stack>
             </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__vgf2)}>
-                <div className={classNames(projectcss.all, sty.freeBox__awPnq)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ftN4C)}
-                  >
-                    {p.renderPlasmicSlot({
-                      defaultContents: "5%",
-                      value: args.slot5,
-                      className: classNames(sty.slotTargetSlot5)
-                    })}
-                  </div>
-                </div>
-              </div>
-            ) : null}
           </div>
-        </p.Stack>
-      ) : null}
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__unRbz)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__t27NZ
+            )}
+          >
+            {"Referral Bonus"}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__vgf2)}>
+            <div className={classNames(projectcss.all, sty.freeBox__awPnq)}>
+              <div className={classNames(projectcss.all, sty.freeBox__ftN4C)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: "5%",
+                  value: args.slot5,
+                  className: classNames(sty.slotTargetSlot5)
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </p.Stack>
       <div className={classNames(projectcss.all, sty.freeBox__t9WQ)}>
         {p.renderPlasmicSlot({
           defaultContents: "Daily Withdrawal",
@@ -299,7 +285,7 @@ function PlasmicPlan__RenderFunc(props: {
           defaultContents: (
             <Button2
               className={classNames("__wab_instance", sty.button2__kAeDi)}
-              color={"teal" as const}
+              color={"teal"}
             >
               {"Invest Now"}
             </Button2>

@@ -175,26 +175,22 @@ function PlasmicAbout__RenderFunc(props: {
                 </React.Fragment>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___14EHj)}>
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__zXHh)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img___081Zp)}
-                      displayHeight={"100px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"none" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"100px" as const}
-                      loading={"lazy" as const}
-                      src={
-                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5ce13a7524b02e03775131f9_ceo-avatar.jpg" as const
-                      }
-                    />
-                  </div>
-                ) : null}
+                <div className={classNames(projectcss.all, sty.freeBox__zXHh)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___081Zp)}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100px"}
+                    loading={"lazy"}
+                    src={
+                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5ce13a7524b02e03775131f9_ceo-avatar.jpg"
+                    }
+                  />
+                </div>
                 <div className={classNames(projectcss.all, sty.freeBox__eGxv5)}>
                   <h6
                     className={classNames(
@@ -219,69 +215,64 @@ function PlasmicAbout__RenderFunc(props: {
                   </div>
                 </div>
               </div>
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__ysKOc)}
-                >
-                  <BackersLink
-                    className={classNames(
-                      "__wab_instance",
-                      sty.backersLink__auA
-                    )}
-                  />
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ysKOc)}
+              >
+                <BackersLink
+                  className={classNames("__wab_instance", sty.backersLink__auA)}
+                />
 
-                  <BackersLink
-                    className={classNames(
-                      "__wab_instance",
-                      sty.backersLink__pLay
-                    )}
-                    slot={
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__misNg)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={
-                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb0cdaada6a20231e71_testimonial_ledger.svg" as const
-                        }
-                      />
-                    }
-                  >
-                    {"Custody secured by Ledger Enterprise"}
-                  </BackersLink>
-                  <BackersLink
-                    className={classNames(
-                      "__wab_instance",
-                      sty.backersLink___5UbNm
-                    )}
-                    slot={
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__qoVe)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={
-                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb35925bbf0b0b93c0a_testimonial_torino_fc.svg" as const
-                        }
-                      />
-                    }
-                  >
-                    {"Official Crypto Partner of Torino FC"}
-                  </BackersLink>
-                </p.Stack>
-              ) : null}
+                <BackersLink
+                  className={classNames(
+                    "__wab_instance",
+                    sty.backersLink__pLay
+                  )}
+                  slot={
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__misNg)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb0cdaada6a20231e71_testimonial_ledger.svg"
+                      }
+                    />
+                  }
+                >
+                  {"Custody secured by Ledger Enterprise"}
+                </BackersLink>
+                <BackersLink
+                  className={classNames(
+                    "__wab_instance",
+                    sty.backersLink___5UbNm
+                  )}
+                  slot={
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__qoVe)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb35925bbf0b0b93c0a_testimonial_torino_fc.svg"
+                      }
+                    />
+                  }
+                >
+                  {"Official Crypto Partner of Torino FC"}
+                </BackersLink>
+              </p.Stack>
               <div className={classNames(projectcss.all, sty.freeBox___0V2Qt)}>
                 <h5
                   className={classNames(
@@ -297,32 +288,27 @@ function PlasmicAbout__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__zuJsh)}
                   >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__zZXnG
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__mgLqB)}
-                          displayHeight={"100%" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/friends_tech_king/images/image3.png",
-                            fullWidth: 250,
-                            fullHeight: 51,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    ) : null}
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__zZXnG)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__mgLqB)}
+                        displayHeight={"100%"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/friends_tech_king/images/image3.png",
+                          fullWidth: 250,
+                          fullHeight: 51,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
                     <div
                       className={classNames(
                         projectcss.all,
@@ -338,32 +324,27 @@ function PlasmicAbout__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__sjbPz)}
                   >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__xyKo3
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__oiOei)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/friends_tech_king/images/image4.png",
-                            fullWidth: 490,
-                            fullHeight: 96,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    ) : null}
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__xyKo3)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__oiOei)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/friends_tech_king/images/image4.png",
+                          fullWidth: 490,
+                          fullHeight: 96,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
                     <div
                       className={classNames(
                         projectcss.all,
@@ -379,32 +360,27 @@ function PlasmicAbout__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox___0SfAo)}
                   >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__pu7Dp
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__sW7Lx)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/friends_tech_king/images/image5.png",
-                            fullWidth: 445,
-                            fullHeight: 57,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    ) : null}
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__pu7Dp)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__sW7Lx)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/friends_tech_king/images/image5.png",
+                          fullWidth: 445,
+                          fullHeight: 57,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
                     <div
                       className={classNames(
                         projectcss.all,
@@ -420,32 +396,27 @@ function PlasmicAbout__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__kf7Yt)}
                   >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__hycY
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__q91Us)}
-                          displayHeight={"100%" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/friends_tech_king/images/image2.png",
-                            fullWidth: 360,
-                            fullHeight: 73,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    ) : null}
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__hycY)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__q91Us)}
+                        displayHeight={"100%"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/friends_tech_king/images/image2.png",
+                          fullWidth: 360,
+                          fullHeight: 73,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
                     <div
                       className={classNames(
                         projectcss.all,
@@ -622,15 +593,15 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__wyfA7)}
-                    displayHeight={"100px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100px" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100px"}
+                    loading={"lazy"}
                     src={
-                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee021996d9706c2de56b_ilya-p-500.jpeg" as const
+                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee021996d9706c2de56b_ilya-p-500.jpeg"
                     }
                   />
                 </TeamItem>
@@ -674,15 +645,15 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__pKo0A)}
-                    displayHeight={"100px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100px" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100px"}
+                    loading={"lazy"}
                     src={
-                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee029a14f64183e19cbd_alex-p-500.jpeg" as const
+                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee029a14f64183e19cbd_alex-p-500.jpeg"
                     }
                   />
                 </TeamItem>
@@ -726,15 +697,15 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__p1L6P)}
-                    displayHeight={"100px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100px" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100px"}
+                    loading={"lazy"}
                     src={
-                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee0244880580afdeb1e3_natalia-p-500.jpeg" as const
+                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee0244880580afdeb1e3_natalia-p-500.jpeg"
                     }
                   />
                 </TeamItem>
@@ -778,15 +749,15 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__olufa)}
-                    displayHeight={"100px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100px" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100px"}
+                    loading={"lazy"}
                     src={
-                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee00663724200cfe63d3_igor-p-500.jpeg" as const
+                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee00663724200cfe63d3_igor-p-500.jpeg"
                     }
                   />
                 </TeamItem>
@@ -804,155 +775,147 @@ function PlasmicAbout__RenderFunc(props: {
                 >
                   {"Our Partners"}
                 </h3>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__f4Yf4)}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__f4Yf4)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__i8Bc)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__i8Bc)}
+                      className={classNames(projectcss.all, sty.freeBox__fxB)}
                     >
-                      <div
-                        className={classNames(projectcss.all, sty.freeBox__fxB)}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img___0ZnQm)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61d83f692586c50155984c57_ledger-entreprise-solutions-logo-blue.svg" as const
-                          }
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__qvjbt
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Secured custody."}
-                          </span>
-                          <React.Fragment>
-                            {
-                              " Custody management solution and $150 million pooled crime insurance."
-                            }
-                          </React.Fragment>
-                        </React.Fragment>
-                      </div>
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img___0ZnQm)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61d83f692586c50155984c57_ledger-entreprise-solutions-logo-blue.svg"
+                        }
+                      />
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__mggvD)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qvjbt
+                      )}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__vfOxK
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__jQeVr)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c14ba144d4cf7d4defdd8a_Magic-Square-New-Logo-Light-Backgrounds.svg" as const
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
                           }
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___60I79
-                        )}
-                      >
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Secured custody."}
+                        </span>
                         <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Web 3.0 Games and Apps. "}
-                          </span>
-                          <React.Fragment>
-                            {
-                              "Discover Community-Vetted Blockchain and Crypto Apps, Games, CeDeFi and more"
-                            }
-                          </React.Fragment>
+                          {
+                            " Custody management solution and $150 million pooled crime insurance."
+                          }
                         </React.Fragment>
-                      </div>
+                      </React.Fragment>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__mggvD)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__vfOxK)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__jQeVr)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c14ba144d4cf7d4defdd8a_Magic-Square-New-Logo-Light-Backgrounds.svg"
+                        }
+                      />
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__cOcQ)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___60I79
+                      )}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__qrK7
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__enb6G)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeed39f4004c58c2736d_fireblocks-logo.jpg" as const
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
                           }
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__gxdOz
-                        )}
-                      >
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Web 3.0 Games and Apps. "}
+                        </span>
                         <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Asset Platform."}
-                          </span>
-                          <React.Fragment>
-                            {
-                              " Hundreds of crypto and digital asset businesses use Fireblocks software and APIs to custody."
-                            }
-                          </React.Fragment>
+                          {
+                            "Discover Community-Vetted Blockchain and Crypto Apps, Games, CeDeFi and more"
+                          }
                         </React.Fragment>
-                      </div>
+                      </React.Fragment>
                     </div>
-                  </p.Stack>
-                ) : null}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__cOcQ)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__qrK7)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__enb6G)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeed39f4004c58c2736d_fireblocks-logo.jpg"
+                        }
+                      />
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gxdOz
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Asset Platform."}
+                        </span>
+                        <React.Fragment>
+                          {
+                            " Hundreds of crypto and digital asset businesses use Fireblocks software and APIs to custody."
+                          }
+                        </React.Fragment>
+                      </React.Fragment>
+                    </div>
+                  </div>
+                </p.Stack>
               </section>
               <section
                 className={classNames(projectcss.all, sty.section__iMtPq)}
@@ -967,221 +930,207 @@ function PlasmicAbout__RenderFunc(props: {
                 >
                   {"Why You Choose friend.tech"}
                 </h3>
-                {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__eoVtZ)}
+                >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__eoVtZ)}
+                    className={classNames(projectcss.all, sty.freeBox___2CRlj)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__vw0ET)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__byj38)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d257dae2a4e2440cd59c_security.svg"
+                        }
+                      />
+
+                      <h5
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h5,
+                          projectcss.__wab_text,
+                          sty.h5___6Z0Rk
+                        )}
+                      >
+                        {"Secured crypto wallet"}
+                      </h5>
+                    </p.Stack>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yDgGs
+                      )}
+                    >
+                      {
+                        "friend.tech uses Ledger Vault's industry leading information technology infrastructure to securely control its crypto assets. Ledger Vault provides security solutions and $150M pooled crime insurance."
+                      }
+                    </div>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__itazX)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__f8VJ)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__dVHs)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d258cbc040c25a538123_safety.svg"
+                        }
+                      />
+
+                      <h5
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h5,
+                          projectcss.__wab_text,
+                          sty.h5__fN4Od
+                        )}
+                      >
+                        {"Safety of fiat funds"}
+                      </h5>
+                    </p.Stack>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__iok1M
+                      )}
+                    >
+                      {
+                        "friend.tech has its bank accounts at reputable banks at Europe and Switzerland, We do not avoid banks. We partner with them."
+                      }
+                    </div>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__lggyF)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__jsv5C)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__p3U1)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d257e2439620ab3e210a_team.svg"
+                        }
+                      />
+
+                      <h5
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h5,
+                          projectcss.__wab_text,
+                          sty.h5__pfrJ4
+                        )}
+                      >
+                        {"Team experience"}
+                      </h5>
+                    </p.Stack>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ij7R
+                      )}
+                    >
+                      {
+                        "friend.tech management and engineering teams have 15+ years in FinTech and technology development. We're not an ICO backed!"
+                      }
+                    </div>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__jPvP)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
                       className={classNames(
                         projectcss.all,
-                        sty.freeBox___2CRlj
+                        sty.freeBox___9OfHr
                       )}
                     >
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__vw0ET
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__byj38)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d257dae2a4e2440cd59c_security.svg" as const
-                          }
-                        />
-
-                        <h5
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h5,
-                            projectcss.__wab_text,
-                            sty.h5___6Z0Rk
-                          )}
-                        >
-                          {"Secured crypto wallet"}
-                        </h5>
-                      </p.Stack>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yDgGs
-                        )}
-                      >
-                        {
-                          "friend.tech uses Ledger Vault's industry leading information technology infrastructure to securely control its crypto assets. Ledger Vault provides security solutions and $150M pooled crime insurance."
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img___5I5Pg)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={
+                          "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d65135dca4f1a3669bf0aee_ftp.svg"
                         }
-                      </div>
+                      />
+
+                      <h5
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h5,
+                          projectcss.__wab_text,
+                          sty.h5___00Fq2
+                        )}
+                      >
+                        {"Risk control"}
+                      </h5>
                     </p.Stack>
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__itazX)}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__aiyot
+                      )}
                     >
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__f8VJ
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__dVHs)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d258cbc040c25a538123_safety.svg" as const
-                          }
-                        />
-
-                        <h5
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h5,
-                            projectcss.__wab_text,
-                            sty.h5__fN4Od
-                          )}
-                        >
-                          {"Safety of fiat funds"}
-                        </h5>
-                      </p.Stack>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__iok1M
-                        )}
-                      >
-                        {
-                          "friend.tech has its bank accounts at reputable banks at Europe and Switzerland, We do not avoid banks. We partner with them."
-                        }
-                      </div>
-                    </p.Stack>
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__lggyF)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__jsv5C
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__p3U1)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d257e2439620ab3e210a_team.svg" as const
-                          }
-                        />
-
-                        <h5
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h5,
-                            projectcss.__wab_text,
-                            sty.h5__pfrJ4
-                          )}
-                        >
-                          {"Team experience"}
-                        </h5>
-                      </p.Stack>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__ij7R
-                        )}
-                      >
-                        {
-                          "friend.tech management and engineering teams have 15+ years in FinTech and technology development. We're not an ICO backed!"
-                        }
-                      </div>
-                    </p.Stack>
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__jPvP)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___9OfHr
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img___5I5Pg)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={
-                            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d65135dca4f1a3669bf0aee_ftp.svg" as const
-                          }
-                        />
-
-                        <h5
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h5,
-                            projectcss.__wab_text,
-                            sty.h5___00Fq2
-                          )}
-                        >
-                          {"Risk control"}
-                        </h5>
-                      </p.Stack>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__aiyot
-                        )}
-                      >
-                        {
-                          "friend.tech team has extensive expertise in currency exchange risk management. We know how to save our funds so we know how to save yours."
-                        }
-                      </div>
-                    </p.Stack>
+                      {
+                        "friend.tech team has extensive expertise in currency exchange risk management. We know how to save our funds so we know how to save yours."
+                      }
+                    </div>
                   </p.Stack>
-                ) : null}
+                </p.Stack>
               </section>
               <section
                 className={classNames(projectcss.all, sty.section__dPnZu)}
@@ -1215,13 +1164,13 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__ldJ)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/image2.png",
                       fullWidth: 360,
@@ -1233,13 +1182,13 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__tXnIu)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/image3.png",
                       fullWidth: 250,
@@ -1251,13 +1200,13 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img___0G7Qx)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/image4.png",
                       fullWidth: 490,
@@ -1269,13 +1218,13 @@ function PlasmicAbout__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__cg0Jn)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/image5.png",
                       fullWidth: 445,
@@ -1288,26 +1237,22 @@ function PlasmicAbout__RenderFunc(props: {
               <section
                 className={classNames(projectcss.all, sty.section__q7F3Z)}
               >
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__eWjSh)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img___3O6D)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={
-                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c825b85881a9fcf1edb652_screen_cta_2-p-800.png" as const
-                      }
-                    />
-                  </div>
-                ) : null}
+                <div className={classNames(projectcss.all, sty.freeBox__eWjSh)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___3O6D)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={
+                      "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c825b85881a9fcf1edb652_screen_cta_2-p-800.png"
+                    }
+                  />
+                </div>
                 <h3
                   className={classNames(
                     projectcss.all,
@@ -1333,7 +1278,7 @@ function PlasmicAbout__RenderFunc(props: {
                   data-plasmic-name={"button3"}
                   data-plasmic-override={overrides.button3}
                   className={classNames("__wab_instance", sty.button3)}
-                  color={"white" as const}
+                  color={"white"}
                   link={`/loan`}
                 >
                   <div
@@ -1369,15 +1314,15 @@ function PlasmicAbout__RenderFunc(props: {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__rc3P5)}
-                      displayHeight={"20px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"20px" as const}
-                      loading={"lazy" as const}
+                      displayHeight={"20px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"20px"}
+                      loading={"lazy"}
                       src={
-                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e319d805196b051acc75_switzerland%20(1).svg" as const
+                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e319d805196b051acc75_switzerland%20(1).svg"
                       }
                     />
                   }
@@ -1401,15 +1346,15 @@ function PlasmicAbout__RenderFunc(props: {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__nDOc5)}
-                      displayHeight={"20px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"20px" as const}
-                      loading={"lazy" as const}
+                      displayHeight={"20px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"20px"}
+                      loading={"lazy"}
                       src={
-                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e344072bc3cc6157f8c7_european-union.svg" as const
+                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e344072bc3cc6157f8c7_european-union.svg"
                       }
                     />
                   }
@@ -1433,15 +1378,15 @@ function PlasmicAbout__RenderFunc(props: {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__sedkK)}
-                      displayHeight={"20px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"20px" as const}
-                      loading={"lazy" as const}
+                      displayHeight={"20px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"20px"}
+                      loading={"lazy"}
                       src={
-                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c1a1e8c740e1e785d20c56_wallet.svg" as const
+                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c1a1e8c740e1e785d20c56_wallet.svg"
                       }
                     />
                   }

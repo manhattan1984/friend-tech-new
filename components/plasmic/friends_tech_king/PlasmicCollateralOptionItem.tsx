@@ -132,15 +132,15 @@ function PlasmicCollateralOptionItem__RenderFunc(props: {
           <p.PlasmicImg
             alt={""}
             className={classNames(sty.img__gwkv)}
-            displayHeight={"auto" as const}
-            displayMaxHeight={"none" as const}
-            displayMaxWidth={"100%" as const}
-            displayMinHeight={"0" as const}
-            displayMinWidth={"0" as const}
-            displayWidth={"auto" as const}
-            loading={"lazy" as const}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
             src={
-              "https://assets-global.website-files.com/5cc1a690df4e901766e92dcd/5cc1b15dad50d9830d40e177_btc.svg" as const
+              "https://assets-global.website-files.com/5cc1a690df4e901766e92dcd/5cc1b15dad50d9830d40e177_btc.svg"
             }
           />
         ),

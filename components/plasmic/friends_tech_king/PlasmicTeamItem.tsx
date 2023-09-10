@@ -123,27 +123,25 @@ function PlasmicTeamItem__RenderFunc(props: {
         sty.root
       )}
     >
-      {true ? (
-        <div className={classNames(projectcss.all, sty.freeBox__n10T)}>
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__jij)}
-                displayHeight={"100px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"100px" as const}
-                loading={"lazy" as const}
-              />
-            ),
+      <div className={classNames(projectcss.all, sty.freeBox__n10T)}>
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__jij)}
+              displayHeight={"100px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100px"}
+              loading={"lazy"}
+            />
+          ),
 
-            value: args.children
-          })}
-        </div>
-      ) : null}
+          value: args.children
+        })}
+      </div>
       <div className={classNames(projectcss.all, sty.freeBox___595At)}>
         {p.renderPlasmicSlot({
           defaultContents: (

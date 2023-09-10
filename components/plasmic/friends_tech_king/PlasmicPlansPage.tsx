@@ -251,7 +251,7 @@ function PlasmicPlansPage__RenderFunc(props: {
                     data-plasmic-name={"button2"}
                     data-plasmic-override={overrides.button2}
                     className={classNames("__wab_instance", sty.button2)}
-                    color={"teal" as const}
+                    color={"teal"}
                     link={(() => {
                       try {
                         return "/dashboard/plans/" + currentItem.name;

@@ -315,18 +315,16 @@ function PlasmicInvestmentHomepage__RenderFunc(props: {
           </Feature>
         </p.Stack>
       </section>
-      {true ? (
-        <section
-          className={classNames(projectcss.all, sty.section__kl8Gq)}
-          id={"#plans" as const}
-        >
-          <PlansPage
-            data-plasmic-name={"plansPage"}
-            data-plasmic-override={overrides.plansPage}
-            className={classNames("__wab_instance", sty.plansPage)}
-          />
-        </section>
-      ) : null}
+      <section
+        className={classNames(projectcss.all, sty.section__kl8Gq)}
+        id={"#plans"}
+      >
+        <PlansPage
+          data-plasmic-name={"plansPage"}
+          data-plasmic-override={overrides.plansPage}
+          className={classNames("__wab_instance", sty.plansPage)}
+        />
+      </section>
       <section className={classNames(projectcss.all, sty.section__t8Bkv)}>
         <p.Stack
           as={"div"}
@@ -367,34 +365,32 @@ function PlasmicInvestmentHomepage__RenderFunc(props: {
             >
               <Button2
                 className={classNames("__wab_instance", sty.button2__wvvw2)}
-                color={"white" as const}
+                color={"white"}
                 ghost={true}
               >
                 {"Learn More"}
               </Button2>
             </p.PlasmicLink>
           </p.Stack>
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__xAuIu)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__n8StZ)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/friends_tech_king/images/phonepng.png",
-                  fullWidth: 576,
-                  fullHeight: 1152,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-          ) : null}
+          <div className={classNames(projectcss.all, sty.freeBox__xAuIu)}>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__n8StZ)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/friends_tech_king/images/phonepng.png",
+                fullWidth: 576,
+                fullHeight: 1152,
+                aspectRatio: undefined
+              }}
+            />
+          </div>
         </p.Stack>
       </section>
       <section className={classNames(projectcss.all, sty.section__hPce)}>
@@ -418,15 +414,15 @@ function PlasmicInvestmentHomepage__RenderFunc(props: {
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__zacu6)}
-                displayHeight={"30px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"30px" as const}
-                loading={"lazy" as const}
+                displayHeight={"30px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"30px"}
+                loading={"lazy"}
                 src={
-                  "https://images.unsplash.com/photo-1553514029-1318c9127859?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" as const
+                  "https://images.unsplash.com/photo-1553514029-1318c9127859?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
                 }
               />
             }
@@ -450,15 +446,15 @@ function PlasmicInvestmentHomepage__RenderFunc(props: {
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__zg1PH)}
-                displayHeight={"30px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"30px" as const}
-                loading={"lazy" as const}
+                displayHeight={"30px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"30px"}
+                loading={"lazy"}
                 src={
-                  "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" as const
+                  "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                 }
               />
             }
@@ -475,27 +471,25 @@ function PlasmicInvestmentHomepage__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__eAnf)}
         >
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__yGcm2)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__eYvi6)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/friends_tech_king/images/windowpng2.png",
-                  fullWidth: 2260,
-                  fullHeight: 1484,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-          ) : null}
+          <div className={classNames(projectcss.all, sty.freeBox__yGcm2)}>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__eYvi6)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/friends_tech_king/images/windowpng2.png",
+                fullWidth: 2260,
+                fullHeight: 1484,
+                aspectRatio: undefined
+              }}
+            />
+          </div>
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -523,7 +517,7 @@ function PlasmicInvestmentHomepage__RenderFunc(props: {
             </div>
             <Button2
               className={classNames("__wab_instance", sty.button2__o6SwX)}
-              color={"white" as const}
+              color={"white"}
               ghost={true}
             >
               {"Get Started Today"}

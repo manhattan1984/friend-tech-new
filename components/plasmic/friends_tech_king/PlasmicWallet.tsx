@@ -126,44 +126,40 @@ function PlasmicWallet__RenderFunc(props: {
         sty.root
       )}
     >
-      {true ? (
-        <div className={classNames(projectcss.all, sty.freeBox__u4Ga8)}>
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__wxgQt)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={"https://choronholdings.org/images/metamask.svg" as const}
-              />
-            ),
+      <div className={classNames(projectcss.all, sty.freeBox__u4Ga8)}>
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__wxgQt)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
+              src={"https://choronholdings.org/images/metamask.svg"}
+            />
+          ),
 
-            value: args.children
+          value: args.children
+        })}
+      </div>
+      <div className={classNames(projectcss.all, sty.freeBox__wsBYl)}>
+        <div className={classNames(projectcss.all, sty.freeBox__qlk3E)}>
+          {p.renderPlasmicSlot({
+            defaultContents: "MetaMask",
+            value: args.slot
           })}
         </div>
-      ) : null}
-      {true ? (
-        <div className={classNames(projectcss.all, sty.freeBox__wsBYl)}>
-          <div className={classNames(projectcss.all, sty.freeBox__qlk3E)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "MetaMask",
-              value: args.slot
-            })}
-          </div>
-          <IconIcon
-            data-plasmic-name={"svg"}
-            data-plasmic-override={overrides.svg}
-            className={classNames(projectcss.all, sty.svg)}
-            role={"img"}
-          />
-        </div>
-      ) : null}
+        <IconIcon
+          data-plasmic-name={"svg"}
+          data-plasmic-override={overrides.svg}
+          className={classNames(projectcss.all, sty.svg)}
+          role={"img"}
+        />
+      </div>
     </div>
   ) as React.ReactElement | null;
 }

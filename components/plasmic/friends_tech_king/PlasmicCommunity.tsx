@@ -180,7 +180,7 @@ function PlasmicCommunity__RenderFunc(props: {
                         sty.button__nYn9B
                       )}
                       ghost={true}
-                      link={"/community/#community" as const}
+                      link={"/community/#community"}
                     >
                       {"Learn More"}
                     </Button>
@@ -203,13 +203,13 @@ function PlasmicCommunity__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__lAYnM)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
                     src={{
                       src: "/plasmic/friends_tech_king/images/communitypng.png",
                       fullWidth: 577,
@@ -225,174 +225,149 @@ function PlasmicCommunity__RenderFunc(props: {
               </Hero>
             }
           >
-            {true ? (
-              <div
-                data-plasmic-name={"freeBox"}
-                data-plasmic-override={overrides.freeBox}
-                className={classNames(projectcss.all, sty.freeBox)}
-                id={"community" as const}
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+              id={"community"}
+            >
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__fzUq
+                )}
+                slot={
+                  "Friendtech is a 3.0 Al integrated bot mechanism built by the most advanced web3 developers to solve hardcore equations on contracts and transactions\nAlso provides anticlockwise detection arithmetic analogy which is specifically built to trace and undo undesired transactions on-chain\n\nFriendtech is more than just a community we're a family taking full responsibility of the security of web3 asset and liquidity; to support, build, promote and even authenticate blockchain protocols."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button___2BCvk)}
+                    color={"blue"}
+                  >
+                    {"Join Now"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__lpStt)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
               >
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__fzUq
-                  )}
-                  slot={
-                    "Friendtech is a 3.0 Al integrated bot mechanism built by the most advanced web3 developers to solve hardcore equations on contracts and transactions\nAlso provides anticlockwise detection arithmetic analogy which is specifically built to trace and undo undesired transactions on-chain\n\nFriendtech is more than just a community we're a family taking full responsibility of the security of web3 asset and liquidity; to support, build, promote and even authenticate blockchain protocols."
-                  }
-                  slot2={
-                    true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button___2BCvk
-                        )}
-                        color={"blue" as const}
-                      >
-                        {"Join Now"}
-                      </Button>
-                    ) : null
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__lpStt)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Community Forums"}
-                </BenefitSection>
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__tCv23
-                  )}
-                  slot={
-                    "Stay informed about upcoming events, webinars, and meetups where you can network and learn from industry experts."
-                  }
-                  slot2={
-                    true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__pmjOf
-                        )}
-                        color={"blue" as const}
-                      >
-                        {"Join Now"}
-                      </Button>
-                    ) : null
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__tapVv)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Events and Webinars"}
-                </BenefitSection>
-                <BenefitSection
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__nkP50
-                  )}
-                  slot={
-                    "Discover success stories from our community members who have harnessed the power of Friend Tech."
-                  }
-                  slot2={
-                    true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__eeqa7
-                        )}
-                        color={"blue" as const}
-                      >
-                        {"Join Now"}
-                      </Button>
-                    ) : null
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___9M76Y)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Member Stories"}
-                </BenefitSection>
-                <BenefitSection
-                  alternate={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitSection__lYyGc
-                  )}
-                  slot={
-                    "Ready to connect with tech enthusiasts and industry experts? Join our community today."
-                  }
-                  slot2={
-                    <ConnectButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.connectButton__wpQqe
-                      )}
-                    >
-                      {"Join Now"}
-                    </ConnectButton>
-                  }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__v4Dcz)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
-                  }
-                >
-                  {"Join Our Community"}
-                </BenefitSection>
-              </div>
-            ) : null}
+                {"Community Forums"}
+              </BenefitSection>
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__tCv23
+                )}
+                slot={
+                  "Stay informed about upcoming events, webinars, and meetups where you can network and learn from industry experts."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__pmjOf)}
+                    color={"blue"}
+                  >
+                    {"Join Now"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__tapVv)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
+              >
+                {"Events and Webinars"}
+              </BenefitSection>
+              <BenefitSection
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__nkP50
+                )}
+                slot={
+                  "Discover success stories from our community members who have harnessed the power of Friend Tech."
+                }
+                slot2={
+                  <Button
+                    className={classNames("__wab_instance", sty.button__eeqa7)}
+                    color={"blue"}
+                  >
+                    {"Join Now"}
+                  </Button>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___9M76Y)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
+              >
+                {"Member Stories"}
+              </BenefitSection>
+              <BenefitSection
+                alternate={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.benefitSection__lYyGc
+                )}
+                slot={
+                  "Ready to connect with tech enthusiasts and industry experts? Join our community today."
+                }
+                slot2={
+                  <ConnectButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.connectButton__wpQqe
+                    )}
+                  >
+                    {"Join Now"}
+                  </ConnectButton>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__v4Dcz)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
+              >
+                {"Join Our Community"}
+              </BenefitSection>
+            </div>
           </PageSection>
           <ConnectWallet
             data-plasmic-name={"connectWallet"}

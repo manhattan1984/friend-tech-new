@@ -150,31 +150,29 @@ function PlasmicLoan__RenderFunc(props: {
             sty.root
           )}
         >
-          {true ? (
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
-              <Navbar
-                data-plasmic-name={"navbar"}
-                data-plasmic-override={overrides.navbar}
-                className={classNames("__wab_instance", sty.navbar)}
-              />
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <Navbar
+              data-plasmic-name={"navbar"}
+              data-plasmic-override={overrides.navbar}
+              className={classNames("__wab_instance", sty.navbar)}
+            />
 
-              <LoanHomepage
-                data-plasmic-name={"loanHomepage"}
-                data-plasmic-override={overrides.loanHomepage}
-                className={classNames("__wab_instance", sty.loanHomepage)}
-              />
+            <LoanHomepage
+              data-plasmic-name={"loanHomepage"}
+              data-plasmic-override={overrides.loanHomepage}
+              className={classNames("__wab_instance", sty.loanHomepage)}
+            />
 
-              <Footer
-                data-plasmic-name={"footer"}
-                data-plasmic-override={overrides.footer}
-                className={classNames("__wab_instance", sty.footer)}
-              />
-            </div>
-          ) : null}
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
+          </div>
           <ConnectWallet
             data-plasmic-name={"connectWallet"}
             data-plasmic-override={overrides.connectWallet}

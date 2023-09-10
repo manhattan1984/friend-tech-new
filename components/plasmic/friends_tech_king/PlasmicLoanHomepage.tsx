@@ -146,41 +146,39 @@ function PlasmicLoanHomepage__RenderFunc(props: {
       )}
     >
       <section className={classNames(projectcss.all, sty.section__ybVF)}>
-        {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__cGbpT)}>
-            <h2
-              data-plasmic-name={"h2"}
-              data-plasmic-override={overrides.h2}
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2
-              )}
-            >
-              {"Get Instant Crypto Loans"}
-            </h2>
-            <p
-              data-plasmic-name={"p"}
-              data-plasmic-override={overrides.p}
-              className={classNames(
-                projectcss.all,
-                projectcss.p,
-                projectcss.__wab_text,
-                sty.p
-              )}
-            >
-              {
-                "Use more than 50 TOP coins as collateral for crypto loans with the highest loan-to-value ratio (90%). Get loans in stablecoins or crypto and withdraw instantly to your wallets or exchanges."
-              }
-            </p>
-            <ConnectButton
-              className={classNames("__wab_instance", sty.connectButton__vHuNy)}
-            >
-              {"Get Loan"}
-            </ConnectButton>
-          </div>
-        ) : null}
+        <div className={classNames(projectcss.all, sty.freeBox__cGbpT)}>
+          <h2
+            data-plasmic-name={"h2"}
+            data-plasmic-override={overrides.h2}
+            className={classNames(
+              projectcss.all,
+              projectcss.h2,
+              projectcss.__wab_text,
+              sty.h2
+            )}
+          >
+            {"Get Instant Crypto Loans"}
+          </h2>
+          <p
+            data-plasmic-name={"p"}
+            data-plasmic-override={overrides.p}
+            className={classNames(
+              projectcss.all,
+              projectcss.p,
+              projectcss.__wab_text,
+              sty.p
+            )}
+          >
+            {
+              "Use more than 50 TOP coins as collateral for crypto loans with the highest loan-to-value ratio (90%). Get loans in stablecoins or crypto and withdraw instantly to your wallets or exchanges."
+            }
+          </p>
+          <ConnectButton
+            className={classNames("__wab_instance", sty.connectButton__vHuNy)}
+          >
+            {"Get Loan"}
+          </ConnectButton>
+        </div>
         <p.Stack
           as={"div"}
           hasGap={true}
@@ -244,111 +242,107 @@ function PlasmicLoanHomepage__RenderFunc(props: {
             </div>
           </InfoHoldingComponent>
         </p.Stack>
-        {true ? (
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__nMGqx)}
-          >
-            <BackersLink
-              className={classNames("__wab_instance", sty.backersLink__rpOYc)}
-            />
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.freeBox__nMGqx)}
+        >
+          <BackersLink
+            className={classNames("__wab_instance", sty.backersLink__rpOYc)}
+          />
 
-            <BackersLink
-              className={classNames("__wab_instance", sty.backersLink__b6L7E)}
-              slot={
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__rxLai)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={
-                    "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb0cdaada6a20231e71_testimonial_ledger.svg" as const
-                  }
-                />
-              }
-            >
-              {"Custody secured by Ledger Enterprise"}
-            </BackersLink>
-            <BackersLink
-              className={classNames("__wab_instance", sty.backersLink__lwnah)}
-              slot={
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__t5Pl)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={
-                    "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb35925bbf0b0b93c0a_testimonial_torino_fc.svg" as const
-                  }
-                />
-              }
-            >
-              {"Official Crypto Partner of Torino FC"}
-            </BackersLink>
-          </p.Stack>
-        ) : null}
+          <BackersLink
+            className={classNames("__wab_instance", sty.backersLink__b6L7E)}
+            slot={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__rxLai)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={
+                  "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb0cdaada6a20231e71_testimonial_ledger.svg"
+                }
+              />
+            }
+          >
+            {"Custody secured by Ledger Enterprise"}
+          </BackersLink>
+          <BackersLink
+            className={classNames("__wab_instance", sty.backersLink__lwnah)}
+            slot={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__t5Pl)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={
+                  "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb35925bbf0b0b93c0a_testimonial_torino_fc.svg"
+                }
+              />
+            }
+          >
+            {"Official Crypto Partner of Torino FC"}
+          </BackersLink>
+        </p.Stack>
         <p.PlasmicImg
           alt={""}
           className={classNames(sty.img__nRxzx)}
-          displayHeight={"auto" as const}
-          displayMaxHeight={"none" as const}
-          displayMaxWidth={"100%" as const}
-          displayMinHeight={"0" as const}
-          displayMinWidth={"0" as const}
-          displayWidth={"auto" as const}
-          loading={"lazy" as const}
+          displayHeight={"auto"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={"100%"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"auto"}
+          loading={"lazy"}
           src={
-            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/636bbb544247aa213c570a66_Illustration_loans.jpg" as const
+            "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/636bbb544247aa213c570a66_Illustration_loans.jpg"
           }
         />
       </section>
-      {true ? (
-        <section className={classNames(projectcss.all, sty.section__qODwQ)}>
-          <h3
+      <section className={classNames(projectcss.all, sty.section__qODwQ)}>
+        <h3
+          className={classNames(
+            projectcss.all,
+            projectcss.h3,
+            projectcss.__wab_text,
+            sty.h3___9EHx9
+          )}
+        >
+          {"Collateral Options"}
+        </h3>
+        <div className={classNames(projectcss.all, sty.freeBox__ihlSa)}>
+          <CollateralOptionItem
             className={classNames(
-              projectcss.all,
-              projectcss.h3,
-              projectcss.__wab_text,
-              sty.h3___9EHx9
+              "__wab_instance",
+              sty.collateralOptionItem__er2D
             )}
-          >
-            {"Collateral Options"}
-          </h3>
-          <div className={classNames(projectcss.all, sty.freeBox__ihlSa)}>
-            <CollateralOptionItem
-              className={classNames(
-                "__wab_instance",
-                sty.collateralOptionItem__er2D
-              )}
-            />
+          />
 
-            <CollateralOptionItem
-              className={classNames(
-                "__wab_instance",
-                sty.collateralOptionItem__weuh9
-              )}
-            />
+          <CollateralOptionItem
+            className={classNames(
+              "__wab_instance",
+              sty.collateralOptionItem__weuh9
+            )}
+          />
 
-            <CollateralOptionItem
-              className={classNames(
-                "__wab_instance",
-                sty.collateralOptionItem__x6AP7
-              )}
-            />
-          </div>
-        </section>
-      ) : null}
+          <CollateralOptionItem
+            className={classNames(
+              "__wab_instance",
+              sty.collateralOptionItem__x6AP7
+            )}
+          />
+        </div>
+      </section>
       <section className={classNames(projectcss.all, sty.section__zSdQe)}>
         <h3
           className={classNames(
@@ -360,121 +354,110 @@ function PlasmicLoanHomepage__RenderFunc(props: {
         >
           {"How Crypto Backed Loans Work"}
         </h3>
-        {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__dskrG)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__gAzOr)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={
-                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c7d15611d6b5f71fb0005f_screen_loans-create-p-800.png" as const
-              }
-            />
-          </div>
-        ) : null}
-        {true ? (
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__rp03U)}
-          >
-            {true ? (
-              <LoanSteps
-                className={classNames("__wab_instance", sty.loanSteps___3Q8GP)}
-                slot2={
-                  "friend.tech accepts more than 50 cryptocurrencies as collateral. No fees for crypto deposits or withdrawals."
-                }
-              />
-            ) : null}
-            {true ? (
-              <LoanSteps
-                className={classNames("__wab_instance", sty.loanSteps___8VDnX)}
-                slot={"Get a crypto loan and withdraw funds "}
-                slot2={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gDs9U
-                    )}
+        <div className={classNames(projectcss.all, sty.freeBox__dskrG)}>
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__gAzOr)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={
+              "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c7d15611d6b5f71fb0005f_screen_loans-create-p-800.png"
+            }
+          />
+        </div>
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.freeBox__rp03U)}
+        >
+          <LoanSteps
+            className={classNames("__wab_instance", sty.loanSteps___3Q8GP)}
+            slot2={
+              "friend.tech accepts more than 50 cryptocurrencies as collateral. No fees for crypto deposits or withdrawals."
+            }
+          />
+
+          <LoanSteps
+            className={classNames("__wab_instance", sty.loanSteps___8VDnX)}
+            slot={"Get a crypto loan and withdraw funds "}
+            slot2={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__gDs9U
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>
+                    {
+                      "Login, choose loan settings. Your loan approves instantly. No need to find a lender like in peer-to-peer (p2p) platforms. You instantly receive stablecoins, or popular cryptocurrencies.\n\n"
+                    }
+                  </React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontStyle: "italic", fontWeight: 700 }}
                   >
-                    <React.Fragment>
-                      <React.Fragment>
-                        {
-                          "Login, choose loan settings. Your loan approves instantly. No need to find a lender like in peer-to-peer (p2p) platforms. You instantly receive stablecoins, or popular cryptocurrencies.\n\n"
-                        }
-                      </React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontStyle: "italic", fontWeight: 700 }}
+                    {"Our withdrawal options"}
+                  </span>
+                  <React.Fragment>{":\n\n"}</React.Fragment>
+                  {
+                    <ul
+                      data-plasmic-name={"ul"}
+                      data-plasmic-override={overrides.ul}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.ul,
+                        sty.ul
+                      )}
+                    >
+                      <li
+                        data-plasmic-name={"li"}
+                        data-plasmic-override={overrides.li}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          projectcss.__wab_text,
+                          sty.li
+                        )}
                       >
-                        {"Our withdrawal options"}
-                      </span>
-                      <React.Fragment>{":\n\n"}</React.Fragment>
-                      {
-                        <ul
-                          data-plasmic-name={"ul"}
-                          data-plasmic-override={overrides.ul}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.ul,
-                            sty.ul
-                          )}
-                        >
-                          <li
-                            data-plasmic-name={"li"}
-                            data-plasmic-override={overrides.li}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.li,
-                              projectcss.__wab_text,
-                              sty.li
-                            )}
-                          >
-                            {
-                              "    Crypto withdrawal: withdraw any crypto or stablecoins using our integrated crypto exchange."
-                            }
-                          </li>
-                        </ul>
-                      }
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  </div>
-                }
-              >
-                {"2"}
-              </LoanSteps>
-            ) : null}
-            {true ? (
-              <LoanSteps
-                className={classNames("__wab_instance", sty.loanSteps__d1Enf)}
-                slot={"Manage your payments "}
-                slot2={
-                  "By default, the loan daily fee is calculated every 24 hours from the loan opening moment. You are free to repay the loan at the stipulated time and get back your 10% collateral."
-                }
-              >
-                {"3"}
-              </LoanSteps>
-            ) : null}
-            {true ? (
-              <LoanSteps
-                className={classNames("__wab_instance", sty.loanSteps__qmc7E)}
-                slot={"Get your crypto collateral back anytime "}
-                slot2={
-                  "You can repay your loan anytime, and even part of your loan collateral to get your crypto back."
-                }
-              >
-                {"4"}
-              </LoanSteps>
-            ) : null}
-          </p.Stack>
-        ) : null}
+                        {
+                          "    Crypto withdrawal: withdraw any crypto or stablecoins using our integrated crypto exchange."
+                        }
+                      </li>
+                    </ul>
+                  }
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+            }
+          >
+            {"2"}
+          </LoanSteps>
+          <LoanSteps
+            className={classNames("__wab_instance", sty.loanSteps__d1Enf)}
+            slot={"Manage your payments "}
+            slot2={
+              "By default, the loan daily fee is calculated every 24 hours from the loan opening moment. You are free to repay the loan at the stipulated time and get back your 10% collateral."
+            }
+          >
+            {"3"}
+          </LoanSteps>
+          <LoanSteps
+            className={classNames("__wab_instance", sty.loanSteps__qmc7E)}
+            slot={"Get your crypto collateral back anytime "}
+            slot2={
+              "You can repay your loan anytime, and even part of your loan collateral to get your crypto back."
+            }
+          >
+            {"4"}
+          </LoanSteps>
+        </p.Stack>
         <ConnectButton
           className={classNames("__wab_instance", sty.connectButton__zad91)}
         >
@@ -490,24 +473,22 @@ function PlasmicLoanHomepage__RenderFunc(props: {
         </ConnectButton>
       </section>
       <section className={classNames(projectcss.all, sty.section___9Ufve)}>
-        {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__feU9K)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__zgdrc)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={
-                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c825b85881a9fcf1edb652_screen_cta_2-p-800.png" as const
-              }
-            />
-          </div>
-        ) : null}
+        <div className={classNames(projectcss.all, sty.freeBox__feU9K)}>
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__zgdrc)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={
+              "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c825b85881a9fcf1edb652_screen_cta_2-p-800.png"
+            }
+          />
+        </div>
         <h3
           className={classNames(
             projectcss.all,
@@ -554,15 +535,15 @@ function PlasmicLoanHomepage__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__k7Kk)}
-              displayHeight={"20px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
+              displayHeight={"20px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"20px"}
+              loading={"lazy"}
               src={
-                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e319d805196b051acc75_switzerland%20(1).svg" as const
+                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e319d805196b051acc75_switzerland%20(1).svg"
               }
             />
           }
@@ -583,15 +564,15 @@ function PlasmicLoanHomepage__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__mbNg)}
-              displayHeight={"20px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
+              displayHeight={"20px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"20px"}
+              loading={"lazy"}
               src={
-                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e344072bc3cc6157f8c7_european-union.svg" as const
+                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e344072bc3cc6157f8c7_european-union.svg"
               }
             />
           }
@@ -612,15 +593,15 @@ function PlasmicLoanHomepage__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img___7R4A)}
-              displayHeight={"20px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
+              displayHeight={"20px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"20px"}
+              loading={"lazy"}
               src={
-                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c1a1e8c740e1e785d20c56_wallet.svg" as const
+                "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c1a1e8c740e1e785d20c56_wallet.svg"
               }
             />
           }

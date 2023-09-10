@@ -109,71 +109,66 @@ function PlasmicBackersLink__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   return (
-    true ? (
-      <div
-        data-plasmic-name={"root"}
-        data-plasmic-override={overrides.root}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          plasmic_antd_5_hostless_css.plasmic_tokens,
-          sty.root
-        )}
+    <div
+      data-plasmic-name={"root"}
+      data-plasmic-override={overrides.root}
+      data-plasmic-root={true}
+      data-plasmic-for-node={forNode}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
+        sty.root
+      )}
+    >
+      <p.Stack
+        as={p.PlasmicLink}
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
+        hasGap={true}
+        className={classNames(projectcss.all, projectcss.a, sty.link)}
+        component={Link}
+        platform={"nextjs"}
       >
         <p.Stack
-          as={p.PlasmicLink}
-          data-plasmic-name={"link"}
-          data-plasmic-override={overrides.link}
+          as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, projectcss.a, sty.link)}
-          component={Link}
-          platform={"nextjs"}
+          className={classNames(projectcss.all, sty.freeBox__n16Rq)}
         >
-          {true ? (
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__n16Rq)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__wcomu)}>
-                {p.renderPlasmicSlot({
-                  defaultContents: (
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__hiOyo)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
-                      src={
-                        "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb1cdaada6d30231e75_testimonial_eu_swiss_combined.svg" as const
-                      }
-                    />
-                  ),
+          <div className={classNames(projectcss.all, sty.freeBox__wcomu)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__hiOyo)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={
+                    "https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb1cdaada6d30231e75_testimonial_eu_swiss_combined.svg"
+                  }
+                />
+              ),
 
-                  value: args.slot
-                })}
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__stuxG)}>
-                {p.renderPlasmicSlot({
-                  defaultContents:
-                    "Regulated EU and Swiss Financial institutions",
-                  value: args.children
-                })}
-              </div>
-            </p.Stack>
-          ) : null}
+              value: args.slot
+            })}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__stuxG)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "Regulated EU and Swiss Financial institutions",
+              value: args.children
+            })}
+          </div>
         </p.Stack>
-      </div>
-    ) : null
+      </p.Stack>
+    </div>
   ) as React.ReactElement | null;
 }
 

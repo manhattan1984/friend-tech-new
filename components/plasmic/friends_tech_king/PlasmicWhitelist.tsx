@@ -158,186 +158,180 @@ function PlasmicWhitelist__RenderFunc(props: {
             sty.root
           )}
         >
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__cEer)}>
-              <PageSection
-                data-plasmic-name={"pageSection"}
-                data-plasmic-override={overrides.pageSection}
-                className={classNames("__wab_instance", sty.pageSection)}
-                slot={
-                  <Hero
-                    data-plasmic-name={"hero"}
-                    data-plasmic-override={overrides.hero}
-                    className={classNames("__wab_instance", sty.hero)}
-                    ctaButtons2={
-                      <React.Fragment>
-                        <ConnectButton
-                          className={classNames(
-                            "__wab_instance",
-                            sty.connectButton__cJBkc
-                          )}
-                        >
-                          {"Get Whitelisted"}
-                        </ConnectButton>
-                        <Button
-                          data-plasmic-name={"button"}
-                          data-plasmic-override={overrides.button}
-                          className={classNames("__wab_instance", sty.button)}
-                          ghost={true}
-                          link={"/whitelist/#about-whitelist" as const}
-                        >
-                          {"Learn More"}
-                        </Button>
-                      </React.Fragment>
-                    }
-                    heroHeading2={
-                      <div
+          <div className={classNames(projectcss.all, sty.freeBox__cEer)}>
+            <PageSection
+              data-plasmic-name={"pageSection"}
+              data-plasmic-override={overrides.pageSection}
+              className={classNames("__wab_instance", sty.pageSection)}
+              slot={
+                <Hero
+                  data-plasmic-name={"hero"}
+                  data-plasmic-override={overrides.hero}
+                  className={classNames("__wab_instance", sty.hero)}
+                  ctaButtons2={
+                    <React.Fragment>
+                      <ConnectButton
                         className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__dltgK
+                          "__wab_instance",
+                          sty.connectButton__cJBkc
                         )}
                       >
-                        {
-                          "Unlock Premium Benefits as a Friend Tech Whitelist Member"
-                        }
-                      </div>
-                    }
-                    slot={
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__ePmuu)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/friends_tech_king/images/whitelistpng.png",
-                          fullWidth: 576,
-                          fullHeight: 1152,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    }
-                  >
-                    {"Join Our Whitelist for Exclusive Perks and Early Access"}
-                  </Hero>
-                }
-              >
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__sTdJ2)}
-                    id={"about-whitelist" as const}
-                  >
-                    <PageBenefit
-                      data-plasmic-name={"pageBenefit"}
-                      data-plasmic-override={overrides.pageBenefit}
-                      className={classNames("__wab_instance", sty.pageBenefit)}
-                      slot={"As a whitelist member, you'll enjoy"}
-                      slot2={
-                        <React.Fragment>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__fNWv4
-                            )}
-                          >
-                            {"\u2022 Early access to new features and services"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__lc1Y7
-                            )}
-                          >
-                            {"\u2022 Priority customer support"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__sk5Zn
-                            )}
-                          >
-                            {"\u2022 Exclusive rewards and promotions"}
-                          </div>
-                        </React.Fragment>
-                      }
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___7OOrQ
-                        )}
+                        {"Get Whitelisted"}
+                      </ConnectButton>
+                      <Button
+                        data-plasmic-name={"button"}
+                        data-plasmic-override={overrides.button}
+                        className={classNames("__wab_instance", sty.button)}
+                        ghost={true}
+                        link={"/whitelist/#about-whitelist"}
                       >
-                        <React.Fragment>
-                          <React.Fragment>{""}</React.Fragment>
-                          {
-                            <h3
-                              data-plasmic-name={"h3"}
-                              data-plasmic-override={overrides.h3}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3
-                              )}
-                            >
-                              {"Membership Benefits"}
-                            </h3>
-                          }
-                          <React.Fragment>{""}</React.Fragment>
-                        </React.Fragment>
-                      </div>
-                    </PageBenefit>
-                  </div>
-                ) : null}
-                <BenefitSection
-                  data-plasmic-name={"benefitSection"}
-                  data-plasmic-override={overrides.benefitSection}
-                  alternate={true}
-                  className={classNames("__wab_instance", sty.benefitSection)}
-                  slot={
-                    "Engage with our active community of tech enthusiasts, share insights, and stay updated on industry trends."
+                        {"Learn More"}
+                      </Button>
+                    </React.Fragment>
                   }
-                  slot2={
-                    <ConnectButton
+                  heroHeading2={
+                    <div
                       className={classNames(
-                        "__wab_instance",
-                        sty.connectButton__uhKzR
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dltgK
                       )}
                     >
-                      {"Get Whitelisted"}
-                    </ConnectButton>
+                      {
+                        "Unlock Premium Benefits as a Friend Tech Whitelist Member"
+                      }
+                    </div>
                   }
-                  slot3={
-                    true ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__iutA7)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={"https://placehold.co/600x400" as const}
-                      />
-                    ) : null
+                  slot={
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__ePmuu)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/friends_tech_king/images/whitelistpng.png",
+                        fullWidth: 576,
+                        fullHeight: 1152,
+                        aspectRatio: undefined
+                      }}
+                    />
                   }
                 >
-                  {"Community Engagement"}
-                </BenefitSection>
-              </PageSection>
-            </div>
-          ) : null}
+                  {"Join Our Whitelist for Exclusive Perks and Early Access"}
+                </Hero>
+              }
+            >
+              <div
+                className={classNames(projectcss.all, sty.freeBox__sTdJ2)}
+                id={"about-whitelist"}
+              >
+                <PageBenefit
+                  data-plasmic-name={"pageBenefit"}
+                  data-plasmic-override={overrides.pageBenefit}
+                  className={classNames("__wab_instance", sty.pageBenefit)}
+                  slot={"As a whitelist member, you'll enjoy"}
+                  slot2={
+                    <React.Fragment>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__fNWv4
+                        )}
+                      >
+                        {"\u2022 Early access to new features and services"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__lc1Y7
+                        )}
+                      >
+                        {"\u2022 Priority customer support"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__sk5Zn
+                        )}
+                      >
+                        {"\u2022 Exclusive rewards and promotions"}
+                      </div>
+                    </React.Fragment>
+                  }
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7OOrQ
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <h3
+                          data-plasmic-name={"h3"}
+                          data-plasmic-override={overrides.h3}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h3,
+                            projectcss.__wab_text,
+                            sty.h3
+                          )}
+                        >
+                          {"Membership Benefits"}
+                        </h3>
+                      }
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
+                  </div>
+                </PageBenefit>
+              </div>
+              <BenefitSection
+                data-plasmic-name={"benefitSection"}
+                data-plasmic-override={overrides.benefitSection}
+                alternate={true}
+                className={classNames("__wab_instance", sty.benefitSection)}
+                slot={
+                  "Engage with our active community of tech enthusiasts, share insights, and stay updated on industry trends."
+                }
+                slot2={
+                  <ConnectButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.connectButton__uhKzR
+                    )}
+                  >
+                    {"Get Whitelisted"}
+                  </ConnectButton>
+                }
+                slot3={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__iutA7)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={"https://placehold.co/600x400"}
+                  />
+                }
+              >
+                {"Community Engagement"}
+              </BenefitSection>
+            </PageSection>
+          </div>
           <ConnectWallet
             data-plasmic-name={"connectWallet"}
             data-plasmic-override={overrides.connectWallet}

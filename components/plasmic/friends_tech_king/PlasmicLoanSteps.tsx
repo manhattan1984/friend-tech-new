@@ -112,61 +112,57 @@ function PlasmicLoanSteps__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   return (
-    true ? (
+    <p.Stack
+      as={"div"}
+      data-plasmic-name={"root"}
+      data-plasmic-override={overrides.root}
+      data-plasmic-root={true}
+      data-plasmic-for-node={forNode}
+      hasGap={true}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
+        sty.root
+      )}
+    >
       <p.Stack
         as={"div"}
-        data-plasmic-name={"root"}
-        data-plasmic-override={overrides.root}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
         hasGap={true}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          plasmic_antd_5_hostless_css.plasmic_tokens,
-          sty.root
-        )}
+        className={classNames(projectcss.all, sty.freeBox__vxFqS)}
       >
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__vxFqS)}
-        >
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox___6Y6Ms)}>
-              <div className={classNames(projectcss.all, sty.freeBox__hlC6)}>
-                {p.renderPlasmicSlot({
-                  defaultContents: "1",
-                  value: args.children,
-                  className: classNames(sty.slotTargetChildren)
-                })}
-              </div>
-            </div>
-          ) : null}
-          <h6
-            data-plasmic-name={"h6"}
-            data-plasmic-override={overrides.h6}
-            className={classNames(projectcss.all, projectcss.h6, sty.h6)}
-          >
+        <div className={classNames(projectcss.all, sty.freeBox___6Y6Ms)}>
+          <div className={classNames(projectcss.all, sty.freeBox__hlC6)}>
             {p.renderPlasmicSlot({
-              defaultContents: "Transfer crypto to your wallet",
-              value: args.slot
+              defaultContents: "1",
+              value: args.children,
+              className: classNames(sty.slotTargetChildren)
             })}
-          </h6>
-        </p.Stack>
-        <div className={classNames(projectcss.all, sty.freeBox__hgVx)}>
-          {p.renderPlasmicSlot({
-            defaultContents:
-              "ChoronHoldings accepts more than 50 cryptocurrencies as collateral. No fees for crypto deposits or withdrawals.",
-            value: args.slot2,
-            className: classNames(sty.slotTargetSlot2)
-          })}
+          </div>
         </div>
+        <h6
+          data-plasmic-name={"h6"}
+          data-plasmic-override={overrides.h6}
+          className={classNames(projectcss.all, projectcss.h6, sty.h6)}
+        >
+          {p.renderPlasmicSlot({
+            defaultContents: "Transfer crypto to your wallet",
+            value: args.slot
+          })}
+        </h6>
       </p.Stack>
-    ) : null
+      <div className={classNames(projectcss.all, sty.freeBox__hgVx)}>
+        {p.renderPlasmicSlot({
+          defaultContents:
+            "ChoronHoldings accepts more than 50 cryptocurrencies as collateral. No fees for crypto deposits or withdrawals.",
+          value: args.slot2,
+          className: classNames(sty.slotTargetSlot2)
+        })}
+      </div>
+    </p.Stack>
   ) as React.ReactElement | null;
 }
 
