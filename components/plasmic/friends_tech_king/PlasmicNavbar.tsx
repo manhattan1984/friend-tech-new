@@ -77,14 +77,6 @@ export interface DefaultNavbarProps {
   className?: string;
 }
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function useNextRouter() {
   try {
     return useRouter();
@@ -246,65 +238,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "qQ4EocQNmG-P",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "qQ4EocQNmG-P",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "qQ4EocQNmG-P",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "qQ4EocQNmG-P",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -325,65 +286,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "jsS4J_xiWeod",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "jsS4J_xiWeod",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "jsS4J_xiWeod",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "jsS4J_xiWeod",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -404,65 +334,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Ga0Gg5kBuuI3",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Ga0Gg5kBuuI3",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "Ga0Gg5kBuuI3",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "Ga0Gg5kBuuI3",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -483,65 +382,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "17EUPbVB2hQj",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "17EUPbVB2hQj",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "17EUPbVB2hQj",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "17EUPbVB2hQj",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -562,65 +430,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Torzuuik3nAA",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Torzuuik3nAA",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "Torzuuik3nAA",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "Torzuuik3nAA",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -641,65 +478,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "LJUxDEh40o4I",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "LJUxDEh40o4I",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "LJUxDEh40o4I",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "LJUxDEh40o4I",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -720,65 +526,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "ncElo8ArorbD",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "ncElo8ArorbD",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "ncElo8ArorbD",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "ncElo8ArorbD",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -799,65 +574,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "aJitxWW60k2L",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "aJitxWW60k2L",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "aJitxWW60k2L",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "aJitxWW60k2L",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -878,65 +622,34 @@ function PlasmicNavbar__RenderFunc(props: {
                   $steps["updateShowMenu"] = true
                     ? (() => {
                         const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "ad9ksETLe4fP",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["showMenu"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "ad9ksETLe4fP",
-                              componentUuid: "SfWv_--dQ9Pb",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "ad9ksETLe4fP",
-                            componentUuid: "SfWv_--dQ9Pb"
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["showMenu"]
                           },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
+                          operation: 4
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
 
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]);
                       })()
                     : undefined;
                   if (
                     typeof $steps["updateShowMenu"] === "object" &&
                     typeof $steps["updateShowMenu"].then === "function"
                   ) {
-                    $steps["updateShowMenu"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "ad9ksETLe4fP",
-                        componentUuid: "SfWv_--dQ9Pb"
-                      },
-                      $steps["updateShowMenu"]
-                    );
+                    $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                   }
                 }}
                 platform={"nextjs"}
@@ -954,65 +667,36 @@ function PlasmicNavbar__RenderFunc(props: {
                 $steps["updateConnectWallet"] = true
                   ? (() => {
                       const actionArgs = {
-                        variable: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "aePvHaG_VOwD",
-                            componentUuid: "SfWv_--dQ9Pb",
-                            argName: "variable"
-                          },
-                          () => ({
-                            objRoot: $state,
-                            variablePath: ["connectWallet"]
-                          })
-                        ),
-                        operation: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "aePvHaG_VOwD",
-                            componentUuid: "SfWv_--dQ9Pb",
-                            argName: "operation"
-                          },
-                          () => 4
-                        )
-                      };
-                      return __wrapUserFunction(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "aePvHaG_VOwD",
-                          componentUuid: "SfWv_--dQ9Pb"
+                        variable: {
+                          objRoot: $state,
+                          variablePath: ["connectWallet"]
                         },
-                        () =>
-                          (({ variable, value, startIndex, deleteCount }) => {
-                            if (!variable) {
-                              return;
-                            }
-                            const { objRoot, variablePath } = variable;
+                        operation: 4
+                      };
+                      return (({
+                        variable,
+                        value,
+                        startIndex,
+                        deleteCount
+                      }) => {
+                        if (!variable) {
+                          return;
+                        }
+                        const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
-                            return !oldValue;
-                          })?.apply(null, [actionArgs]),
-                        actionArgs
-                      );
+                        const oldValue = p.get(objRoot, variablePath);
+                        p.set(objRoot, variablePath, !oldValue);
+                        return !oldValue;
+                      })?.apply(null, [actionArgs]);
                     })()
                   : undefined;
                 if (
                   typeof $steps["updateConnectWallet"] === "object" &&
                   typeof $steps["updateConnectWallet"].then === "function"
                 ) {
-                  $steps["updateConnectWallet"] = await __wrapUserPromise(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariable",
-                      interactionUuid: "aePvHaG_VOwD",
-                      componentUuid: "SfWv_--dQ9Pb"
-                    },
-                    $steps["updateConnectWallet"]
-                  );
+                  $steps["updateConnectWallet"] = await $steps[
+                    "updateConnectWallet"
+                  ];
                 }
               }}
             >
@@ -1041,65 +725,34 @@ function PlasmicNavbar__RenderFunc(props: {
                 $steps["updateShowMenu"] = true
                   ? (() => {
                       const actionArgs = {
-                        variable: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "mwi3fxLGcx3W",
-                            componentUuid: "SfWv_--dQ9Pb",
-                            argName: "variable"
-                          },
-                          () => ({
-                            objRoot: $state,
-                            variablePath: ["showMenu"]
-                          })
-                        ),
-                        operation: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "mwi3fxLGcx3W",
-                            componentUuid: "SfWv_--dQ9Pb",
-                            argName: "operation"
-                          },
-                          () => 4
-                        )
-                      };
-                      return __wrapUserFunction(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "mwi3fxLGcx3W",
-                          componentUuid: "SfWv_--dQ9Pb"
+                        variable: {
+                          objRoot: $state,
+                          variablePath: ["showMenu"]
                         },
-                        () =>
-                          (({ variable, value, startIndex, deleteCount }) => {
-                            if (!variable) {
-                              return;
-                            }
-                            const { objRoot, variablePath } = variable;
+                        operation: 4
+                      };
+                      return (({
+                        variable,
+                        value,
+                        startIndex,
+                        deleteCount
+                      }) => {
+                        if (!variable) {
+                          return;
+                        }
+                        const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
-                            return !oldValue;
-                          })?.apply(null, [actionArgs]),
-                        actionArgs
-                      );
+                        const oldValue = p.get(objRoot, variablePath);
+                        p.set(objRoot, variablePath, !oldValue);
+                        return !oldValue;
+                      })?.apply(null, [actionArgs]);
                     })()
                   : undefined;
                 if (
                   typeof $steps["updateShowMenu"] === "object" &&
                   typeof $steps["updateShowMenu"].then === "function"
                 ) {
-                  $steps["updateShowMenu"] = await __wrapUserPromise(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariable",
-                      interactionUuid: "mwi3fxLGcx3W",
-                      componentUuid: "SfWv_--dQ9Pb"
-                    },
-                    $steps["updateShowMenu"]
-                  );
+                  $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                 }
               }}
               role={"img"}
@@ -1125,65 +778,34 @@ function PlasmicNavbar__RenderFunc(props: {
                 $steps["updateShowMenu"] = true
                   ? (() => {
                       const actionArgs = {
-                        variable: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "TFWHBvWIpfWA",
-                            componentUuid: "SfWv_--dQ9Pb",
-                            argName: "variable"
-                          },
-                          () => ({
-                            objRoot: $state,
-                            variablePath: ["showMenu"]
-                          })
-                        ),
-                        operation: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "TFWHBvWIpfWA",
-                            componentUuid: "SfWv_--dQ9Pb",
-                            argName: "operation"
-                          },
-                          () => 4
-                        )
-                      };
-                      return __wrapUserFunction(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "TFWHBvWIpfWA",
-                          componentUuid: "SfWv_--dQ9Pb"
+                        variable: {
+                          objRoot: $state,
+                          variablePath: ["showMenu"]
                         },
-                        () =>
-                          (({ variable, value, startIndex, deleteCount }) => {
-                            if (!variable) {
-                              return;
-                            }
-                            const { objRoot, variablePath } = variable;
+                        operation: 4
+                      };
+                      return (({
+                        variable,
+                        value,
+                        startIndex,
+                        deleteCount
+                      }) => {
+                        if (!variable) {
+                          return;
+                        }
+                        const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
-                            return !oldValue;
-                          })?.apply(null, [actionArgs]),
-                        actionArgs
-                      );
+                        const oldValue = p.get(objRoot, variablePath);
+                        p.set(objRoot, variablePath, !oldValue);
+                        return !oldValue;
+                      })?.apply(null, [actionArgs]);
                     })()
                   : undefined;
                 if (
                   typeof $steps["updateShowMenu"] === "object" &&
                   typeof $steps["updateShowMenu"].then === "function"
                 ) {
-                  $steps["updateShowMenu"] = await __wrapUserPromise(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariable",
-                      interactionUuid: "TFWHBvWIpfWA",
-                      componentUuid: "SfWv_--dQ9Pb"
-                    },
-                    $steps["updateShowMenu"]
-                  );
+                  $steps["updateShowMenu"] = await $steps["updateShowMenu"];
                 }
               }}
               role={"img"}

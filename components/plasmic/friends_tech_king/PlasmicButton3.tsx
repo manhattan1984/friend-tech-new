@@ -149,14 +149,6 @@ export interface DefaultButton3Props extends pp.BaseButtonProps {
   >;
 }
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function useNextRouter() {
   try {
     return useRouter();

@@ -89,14 +89,6 @@ export interface DefaultHeroProps {
   className?: string;
 }
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function useNextRouter() {
   try {
     return useRouter();
@@ -237,70 +229,36 @@ function PlasmicHero__RenderFunc(props: {
                       $steps["updateConnectWallet"] = true
                         ? (() => {
                             const actionArgs = {
-                              variable: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "updateVariable",
-                                  interactionUuid: "pQm3XhnM9_58",
-                                  componentUuid: "2S-DfRS0Ri3G",
-                                  argName: "variable"
-                                },
-                                () => ({
-                                  objRoot: $state,
-                                  variablePath: ["connectWallet"]
-                                })
-                              ),
-                              operation: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "updateVariable",
-                                  interactionUuid: "pQm3XhnM9_58",
-                                  componentUuid: "2S-DfRS0Ri3G",
-                                  argName: "operation"
-                                },
-                                () => 4
-                              )
-                            };
-                            return __wrapUserFunction(
-                              {
-                                type: "InteractionLoc",
-                                actionName: "updateVariable",
-                                interactionUuid: "pQm3XhnM9_58",
-                                componentUuid: "2S-DfRS0Ri3G"
+                              variable: {
+                                objRoot: $state,
+                                variablePath: ["connectWallet"]
                               },
-                              () =>
-                                (({
-                                  variable,
-                                  value,
-                                  startIndex,
-                                  deleteCount
-                                }) => {
-                                  if (!variable) {
-                                    return;
-                                  }
-                                  const { objRoot, variablePath } = variable;
+                              operation: 4
+                            };
+                            return (({
+                              variable,
+                              value,
+                              startIndex,
+                              deleteCount
+                            }) => {
+                              if (!variable) {
+                                return;
+                              }
+                              const { objRoot, variablePath } = variable;
 
-                                  const oldValue = p.get(objRoot, variablePath);
-                                  p.set(objRoot, variablePath, !oldValue);
-                                  return !oldValue;
-                                })?.apply(null, [actionArgs]),
-                              actionArgs
-                            );
+                              const oldValue = p.get(objRoot, variablePath);
+                              p.set(objRoot, variablePath, !oldValue);
+                              return !oldValue;
+                            })?.apply(null, [actionArgs]);
                           })()
                         : undefined;
                       if (
                         typeof $steps["updateConnectWallet"] === "object" &&
                         typeof $steps["updateConnectWallet"].then === "function"
                       ) {
-                        $steps["updateConnectWallet"] = await __wrapUserPromise(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "pQm3XhnM9_58",
-                            componentUuid: "2S-DfRS0Ri3G"
-                          },
-                          $steps["updateConnectWallet"]
-                        );
+                        $steps["updateConnectWallet"] = await $steps[
+                          "updateConnectWallet"
+                        ];
                       }
                     }}
                   >
