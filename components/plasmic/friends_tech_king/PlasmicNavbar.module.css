@@ -10,6 +10,12 @@
   min-width: 0;
   padding: 8px;
 }
+@media (min-width: 768px) {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+}
 .navbar {
   width: auto;
   height: auto;
@@ -40,6 +46,12 @@
   max-width: 100%;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 768px) {
+  .freeBox__hMeYt {
+    width: auto;
+    height: auto;
+  }
 }
 .link__ioIiW {
   display: flex;
@@ -292,7 +304,7 @@
 }
 @media (min-width: 768px) {
   .freeBox___6UoI {
-    display: none;
+    display: flex;
   }
 }
 .svg__mVvNh {

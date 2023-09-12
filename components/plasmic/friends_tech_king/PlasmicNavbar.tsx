@@ -195,7 +195,19 @@ function PlasmicNavbar__RenderFunc(props: {
         </div>
         {(
           hasVariant(globalVariants, "screen", "desktopOnly")
-            ? true
+            ? (() => {
+                try {
+                  return $state.showMenu;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return true;
+                  }
+                  throw e;
+                }
+              })()
             : (() => {
                 try {
                   return $state.showMenu;
